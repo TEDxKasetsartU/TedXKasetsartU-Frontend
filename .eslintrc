@@ -1,9 +1,4 @@
 {
-    "rules": {
-        "no-undef": "off"
-    },
     "parser": "babel-eslint",
-    "plugins": [
-        "react"
-    ],"extends": ["standard", "standard-react"]
+    "extends": ["standard", "standard-react"]
 }
