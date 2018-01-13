@@ -1,3 +1,4 @@
 import React from 'react'
+import Title from '../components/Title'
 
-export default () => <div>AAA</div>
+export default () => <Title title='Sample' />
