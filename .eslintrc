@@ -1,4 +1,7 @@
 {
+    "rules": {
+        "react/prop-types": [2, { "ignore": ["children"] }]
+    },
     "parser": "babel-eslint",
     "extends": ["standard", "standard-react"]
 }
