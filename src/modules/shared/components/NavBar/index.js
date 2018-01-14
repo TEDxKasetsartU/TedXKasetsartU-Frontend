@@ -27,9 +27,9 @@ export default () => (
       </div>
     </Link>
     <NavItem className='nav-item'>
-      <NavLink to='/' className='nav-link'>EVENT</NavLink>
-      <NavLink to='/' className='nav-link'>SPEAKER</NavLink>
-      <NavLink to='/' className='nav-link'>ABOUT</NavLink>
+      <NavLink to='/event' className='nav-link'>EVENT</NavLink>
+      <NavLink to='/speakers' className='nav-link'>SPEAKERS</NavLink>
+      <NavLink to='/about' className='nav-link'>ABOUT</NavLink>
     </NavItem>
   </Nav>
 )
