@@ -13,6 +13,7 @@ const NavLink = styled(Link)`
     &:hover {
         color: red;
     }
+    transition: all 300ms;
 `
 
 const NavItem = styled.div`
@@ -20,7 +21,7 @@ const NavItem = styled.div`
     flex-direction: row;
 `
 export default () => (
-  <Nav className='navbar fixed-top'>
+  <Nav className='navbar sticky-top'>
     <Link to='/' className='navbar-brand'>
       <div className='container'>
         <img src={TEDLogo} alt='' />
