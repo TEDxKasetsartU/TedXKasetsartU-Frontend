@@ -18,16 +18,6 @@ const Grid = styled.div`
   display: grid;
   grid-gap: .5em;
   justify-content: center;
-
-  > a {
-    color: black;
-    text-decoration: none;
-    transition: all 300ms;
-  }
-
-  > a:hover {
-    color: red;
-  }
 `
 
 const Quote = styled.p`
@@ -36,7 +26,9 @@ const Quote = styled.p`
   font-size: 19px;
 `
 
-const CopyRight = styled.small`
+const CopyRight = styled.small.attrs({
+  className: 'text-center text-md-right mt-2 mt-md-0 px-4 d-block'
+})`
   background-color: rgb(35, 35, 35);
   color: lightgray;
   padding: 8px;
@@ -81,8 +73,6 @@ export default () => (
         </div>
       </div>
     </Content>
-    <CopyRight className='text-center text-md-right mt-4 mt-md-0 px-4 d-block'>
-      Copyright © TEDxKasetsartU. All rights reserved.
-    </CopyRight>
+    <CopyRight>Copyright © TEDxKasetsartU. All rights reserved.</CopyRight>
   </Footer>
 )
