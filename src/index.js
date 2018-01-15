@@ -11,9 +11,6 @@ injectGlobal`
   h1, h2, h3, h4, h4, h5 {
     font-family: 'Kanit', sans-serif;
   }
-  body {
-    background-color: #000000;
-  }
 `
 
 render(<App />, document.getElementById('root'))
