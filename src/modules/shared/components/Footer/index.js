@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Icon from 'react-fontawesome'
+import IconLink from '../IconLink'
 import TEDLogo from '../../../../common/images/TEDxKasetsartU_logo-white-trim.png'
 
 const Footer = styled.footer`
@@ -62,18 +62,21 @@ export default () => (
         </div>
         <div className='col-md'>
           <Grid>
-            <a href='https://facebook.com/TEDxKasetsartU'>
-              <Icon className='mr-2' name='globe' size='lg' />
-              TEDxKasetsartU
-            </a>
-            <a href='http://tedxkasetsartu.net'>
-              <Icon className='mr-2' name='facebook-official' size='lg' />
-              tedxkasetsartu.net
-            </a>
-            <a href='https://facebook.com/TEDxKasetsartU'>
-              <Icon className='mr-2' name='twitter' size='lg' />
-              TEDxKasetsartU
-            </a>
+            <IconLink
+              href='https://facebook.com/TEDxKasetsartU'
+              name='globe'
+              text='TEDxKasetsartU'
+            />
+            <IconLink
+              href='http://tedxkasetsartu.net'
+              name='facebook-official'
+              text='tedxkasetsartu.net'
+            />
+            <IconLink
+              href='https://facebook.com/TEDxKasetsartU'
+              name='twitter'
+              text='TEDxKasetsartU'
+            />
           </Grid>
         </div>
       </div>
