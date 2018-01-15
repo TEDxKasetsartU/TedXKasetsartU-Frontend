@@ -10,6 +10,7 @@ export default () => (
     <Fragment>
       <NavBar />
       <Router />
+      <Router />
       <Footer />
     </Fragment>
   </BrowserRouter>
