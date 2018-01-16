@@ -1,12 +1,36 @@
 import React from 'react'
 import Icon from 'react-fontawesome'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+const Link = styled.a`
+  font-size: 14px;
+  color: black;
+  transition: all 300ms;
+
+  &:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px red;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: red;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
+`
 
 const IconLink = props => (
-  <a href={props.href}>
+  <Link href={props.href}>
     <Icon className='mr-2' name={props.name} size='lg' />
     {props.text}
-  </a>
+  </Link>
 )
 
 IconLink.propTypes = {

@@ -18,25 +18,17 @@ const Grid = styled.div`
   display: grid;
   grid-gap: .5em;
   justify-content: center;
-
-  > a {
-    color: black;
-    text-decoration: none;
-    transition: all 300ms;
-  }
-
-  > a:hover {
-    color: red;
-  }
 `
 
 const Quote = styled.p`
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   font-family: sans-serif;
-  font-size: 19px;
+  font-size: 16px;
 `
 
-const CopyRight = styled.small`
+const CopyRight = styled.small.attrs({
+  className: 'text-center text-md-right mt-2 mt-md-0 px-4 d-block'
+})`
   background-color: rgb(35, 35, 35);
   color: lightgray;
   padding: 8px;
@@ -50,7 +42,7 @@ export default () => (
           <img src={TEDLogo} className='img-fluid' width='300' alt='tedxku' />
         </div>
         <div className='col-md'>
-          <blockquote className='blockquote pt-0 pt-md-4 px-4 text-center text-md-left'>
+          <blockquote className='pt-0 pl-0 px-4 text-center pt-md-4 pl-md-4 px-md-0 text-md-left'>
             <Quote className='mb-1'>
                “We believe passionately in the power of ideas to change
               attitudes, lives and, ultimately, the world.”
@@ -86,8 +78,6 @@ export default () => (
         </div>
       </div>
     </Content>
-    <CopyRight className='text-center text-md-right mt-4 mt-md-0 px-4 d-block'>
-      Copyright © TEDxKasetsartU. All rights reserved.
-    </CopyRight>
+    <CopyRight>Copyright © TEDxKasetsartU. All rights reserved.</CopyRight>
   </Footer>
 )

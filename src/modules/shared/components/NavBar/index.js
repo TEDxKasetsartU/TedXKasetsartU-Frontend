@@ -13,8 +13,21 @@ const NavLink = styled(Link)`
   font-weight: 500;
   color: white;
   transition: all 300ms;
+
   &:hover {
-    color: red;
+    color: gray;
+  }
+
+  &:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px red;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
   }
 `
 
