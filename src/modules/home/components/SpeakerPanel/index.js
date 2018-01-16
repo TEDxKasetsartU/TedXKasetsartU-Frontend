@@ -1,16 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
 import SpeakerCard from '../SpeakerCard'
 import speakers from '../../speakers'
 import SectionTitle from '../../../../common/components/SectionTitle'
 import Slider from '../../../../common/components/Slider'
-
-const Panel = styled.div.attrs({
-  className: 'container-fluid'
-})`
-  max-width: 1100px;
-  margin: auto;
-`
+import Panel from '../../../../common/components/Panel'
 
 const SpeakerPanel = () => (
   <Panel>
