@@ -77,6 +77,11 @@ export default () => (
               name='twitter'
               text='TEDxKasetsartU'
             />
+            <IconLink
+              href='https://www.linkedin.com/company/tedxkasetsartu'
+              name='linkedin'
+              text='tedxkasetsartu'
+            />
           </Grid>
         </div>
       </div>
