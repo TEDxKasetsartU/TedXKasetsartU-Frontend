@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Link = styled.a`
+  font-size: 14px;
   color: black;
   transition: all 300ms;
 

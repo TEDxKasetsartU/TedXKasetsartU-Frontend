@@ -23,7 +23,7 @@ const Grid = styled.div`
 const Quote = styled.p`
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   font-family: sans-serif;
-  font-size: 19px;
+  font-size: 16px;
 `
 
 const CopyRight = styled.small.attrs({
@@ -42,7 +42,7 @@ export default () => (
           <img src={TEDLogo} className='img-fluid' width='300' alt='tedxku' />
         </div>
         <div className='col-md'>
-          <blockquote className='blockquote pt-0 pt-md-4 px-4 text-center text-md-left'>
+          <blockquote className='pt-0 pl-0 px-4 text-center pt-md-4 pl-md-4 px-md-0 text-md-left'>
             <Quote className='mb-1'>
                “We believe passionately in the power of ideas to change
               attitudes, lives and, ultimately, the world.”
