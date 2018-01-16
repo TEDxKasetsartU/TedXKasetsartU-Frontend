@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
 import IconLink from '../IconLink'
+import React from 'react'
 import TEDLogo from '../../../../common/images/TEDxKasetsartU_logo-white-trim.png'
+import styled from 'styled-components'
 
 const Footer = styled.footer`
   margin-top: 4em;
@@ -33,7 +33,7 @@ const Grid = styled.div`
 const Quote = styled.p`
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   font-family: sans-serif;
-  font-size: 19px;
+  font-size: 16px;
 `
 
 const CopyRight = styled.small`
