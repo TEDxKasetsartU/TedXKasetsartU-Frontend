@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
-import TEDLogo from '../../../../common/images/TEDWhiteLogo.png'
+import TEDLogo from 'common/images/TEDWhiteLogo.png'
 import styled from 'styled-components'
 
 const Nav = styled.nav`
