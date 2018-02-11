@@ -3,7 +3,7 @@ import {
   Switch
 } from 'react-router-dom'
 
-import HomeRoutes from './modules/home/routes'
+import HomeRoutes from 'modules/home/routes'
 import React from 'react'
 
 function generateRoutes (routes) {

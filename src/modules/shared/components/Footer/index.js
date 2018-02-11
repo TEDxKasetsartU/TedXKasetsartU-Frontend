@@ -1,7 +1,7 @@
+import IconLink from 'modules/shared/components/IconLink'
 import React from 'react'
+import TEDLogo from 'common/images/TEDxKasetsartU_logo-white-trim.png'
 import styled from 'styled-components'
-import IconLink from '../IconLink'
-import TEDLogo from '../../../../common/images/TEDxKasetsartU_logo-white-trim.png'
 
 const Footer = styled.footer`
   margin-top: 4em;

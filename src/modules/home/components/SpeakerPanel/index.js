@@ -1,9 +1,9 @@
 import React from 'react'
+import SectionTitle from 'common/components/SectionTitle'
+import Slider from 'common/components/Slider'
+import SpeakerCard from 'modules/home/components/SpeakerCard'
+import speakers from 'modules/home/speakers'
 import styled from 'styled-components'
-import SpeakerCard from '../SpeakerCard'
-import speakers from '../../speakers'
-import SectionTitle from '../../../../common/components/SectionTitle'
-import Slider from '../../../../common/components/Slider'
 
 const Panel = styled.div.attrs({
   className: 'container-fluid'
