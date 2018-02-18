@@ -1,6 +1,6 @@
 import IconLink from 'modules/shared/components/IconLink'
 import React from 'react'
-import TEDLogo from 'common/images/TEDxKasetsartU_logo-white-trim.png'
+import TEDLogo from 'images/common/TEDxKasetsartU_logo-white-trim.png'
 import styled from 'styled-components'
 
 const Footer = styled.footer`

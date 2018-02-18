@@ -1,2 +1,2 @@
 
-export default (src, prefix, year) => require(`common/images/${prefix}/${year}/${src}`)
+export default (prefix, year, src) => require(`images/${year}/${prefix}/${src}`)
