@@ -1,18 +1,16 @@
 import React from 'react'
-import styled from 'styled-components'
-import Title from 'modules/home/components/Title'
+import Section from 'modules/home/components/Section'
 import colors from 'common/mixins/colors'
 
-const PanelContainer = styled.div`
-    padding: 5% 0;
-    text-align: center;
-    background-color: ${colors.red};
-`
-
 const Speakers = props => (
-    <PanelContainer>
-        <Title title="Speakers" color={colors.white} />
-    </PanelContainer>
+    <Section
+        backgroundColor={colors.red}
+        titleColor={colors.white}
+        dividerColor={colors.white}
+        title="Speakers"
+    >
+        aaa
+    </Section>
 )
 
 export default Speakers
