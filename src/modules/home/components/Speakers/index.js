@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import Section from 'modules/home/components/Section'
+import SpeakerHeadline from 'modules/home/components/SpeakerHeadline'
 import YoutubePlayer from 'modules/home/components/YoutubePlayer'
 import colors from 'common/mixins/colors'
 import styled from 'styled-components'
@@ -23,6 +24,7 @@ const Speakers = props => (
     title='Speakers'
   >
     <SpeakerDetail>
+      <SpeakerHeadline title={props.speakers[0].topic} author={props.speakers[0].name} />
       <YoutubePlayer id={props.speakers[0].youtubeId} />
     </SpeakerDetail>
   </Section>
