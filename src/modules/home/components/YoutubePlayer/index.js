@@ -1,12 +1,14 @@
+import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
-
-const Player = styled.iframe`
-    
-`
 
 const YoutubePlayer = props => (
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ir9FDjHe92U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen />
+  <div className='embed-responsive embed-responsive-16by9'>
+    <iframe className='embed-responsive-item' src={`https://www.youtube.com/embed/${props.id}`} frameBorder='0' allow='autoplay; encrypted-media' allowFullScreen />
+  </div>
 )
+
+YoutubePlayer.propTypes = {
+  id: PropTypes.string
+}
 
 export default YoutubePlayer
