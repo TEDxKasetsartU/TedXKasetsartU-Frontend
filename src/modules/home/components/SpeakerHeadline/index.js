@@ -9,7 +9,7 @@ const SpeakerHeadlineContainer = styled.div`
     border-right: 7px solid white;
     padding: 10px 0;
     margin: 5% 0;
-    background-color: #EF5350;
+    background-color: ${colors.lightRed};
 `
 
 const Title = styled.h4`
