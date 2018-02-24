@@ -24,7 +24,7 @@ const Speakers = props => (
     dividerColor={colors.white}
     title='Speakers'
   >
-    {/* <SpeakerSelector speakers={props.speakers} year={props.year} /> */}
+    <SpeakerSelector speakers={props.speakers} year={props.year} />
     <SpeakerDetail>
       <SpeakerHeadline title={props.speakers[0].topic} author={props.speakers[0].name} />
       <YoutubePlayer id={props.speakers[0].youtubeId} />
@@ -33,7 +33,8 @@ const Speakers = props => (
 )
 
 Speakers.propTypes = {
-  speakers: PropTypes.array
+  speakers: PropTypes.array,
+  year: PropTypes.number
 }
 
 export default Speakers
