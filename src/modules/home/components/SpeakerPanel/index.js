@@ -14,7 +14,7 @@ const Panel = styled.div.attrs({
 
 const SpeakerPanel = () => (
   <Panel>
-    <SectionTitle title='Speakers' subtitle='2017' />
+    <SectionTitle title='Speakers' textColor='black' underlineColor='red' />
     <Slider>
       { speakers.map((speaker, i) =>
         <div className='p-1' key={i}>
