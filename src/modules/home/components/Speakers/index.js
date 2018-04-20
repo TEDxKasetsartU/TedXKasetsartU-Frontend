@@ -39,12 +39,13 @@ class Speakers extends React.PureComponent {
         titleColor={colors.white}
         dividerColor={colors.white}
         title='Speakers'
+        id='speakers'
       >
         <SpeakerSelector speakers={speakers} year={year} selectSpeaker={this.selectSpeaker} activeSpeaker={selectedSpeaker.name} />
         { selectedSpeaker &&
           (<SpeakerDetail>
             <SpeakerHeadline title={selectedSpeaker.topic} author={selectedSpeaker.name} />
-            <YoutubePlayer id={selectedSpeaker.youtubeId} />
+            <YoutubePlayer id={selectedSpeaker.youtubeId} title={selectedSpeaker.title} />
           </SpeakerDetail>)
         }
       </Section>

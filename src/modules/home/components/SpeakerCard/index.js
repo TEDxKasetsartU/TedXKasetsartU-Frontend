@@ -24,7 +24,6 @@ const Image = styled.img`
 class SpeakerCard extends React.PureComponent {
   render () {
     const { speaker, speaker: { imageSrc, name }, year, activeSpeaker, selectSpeaker } = this.props
-    console.log(activeSpeaker, name)
     return (
       <ImageContainer>
         <Image src={loadImage('speakers', year, imageSrc)} onClick={() => selectSpeaker(speaker)} isSelected={name === activeSpeaker} />

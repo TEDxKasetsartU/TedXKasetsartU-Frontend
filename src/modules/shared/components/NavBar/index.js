@@ -45,7 +45,7 @@ export default () => (
     </Link>
     <NavItem className='nav-item'>
       <NavLink to='/event' className='nav-link'>EVENT</NavLink>
-      <NavLink to='/speakers' className='nav-link'>SPEAKERS</NavLink>
+      <NavLink to='#speakers' className='nav-link'>SPEAKERS</NavLink>
       <NavLink to='/about' className='nav-link'>ABOUT</NavLink>
     </NavItem>
   </Nav>
