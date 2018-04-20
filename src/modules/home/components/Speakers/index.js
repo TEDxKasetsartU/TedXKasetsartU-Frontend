@@ -33,7 +33,6 @@ class Speakers extends React.PureComponent {
   render () {
     const { speakers, year } = this.props
     const { selectedSpeaker } = this.state
-    console.log(selectedSpeaker)
     return (
       <Section
         backgroundColor={colors.red}

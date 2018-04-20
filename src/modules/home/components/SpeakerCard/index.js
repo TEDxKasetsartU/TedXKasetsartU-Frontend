@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import loadImage from 'common/utils/loadImage'
 import styled from 'styled-components'
@@ -20,7 +21,7 @@ const Image = styled.img`
   }
 `
 
-export default class SpeakerCard extends React.PureComponent {
+class SpeakerCard extends React.PureComponent {
   render () {
     const { speaker, speaker: { imageSrc, name }, year, activeSpeaker, selectSpeaker } = this.props
     console.log(activeSpeaker, name)
@@ -31,3 +32,12 @@ export default class SpeakerCard extends React.PureComponent {
     )
   }
 }
+
+SpeakerCard.propTypes = {
+  speaker: PropTypes.object,
+  year: PropTypes.number,
+  activeSpeaker: PropTypes.string,
+  selectSpeaker: PropTypes.func
+}
+
+export default SpeakerCard
