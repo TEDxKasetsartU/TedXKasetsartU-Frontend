@@ -21,16 +21,13 @@ const Image = styled.img`
 `
 
 export default class SpeakerCard extends React.PureComponent {
-    onClick = () => {
-      console.log('Click')
-    }
-
-    render () {
-      const { speaker: {imageSrc}, year } = this.props
-      return (
-        <ImageContainer>
-          <Image src={loadImage('speakers', year, imageSrc)} onClick={this.onClick} />
-        </ImageContainer>
-      )
-    }
+  render () {
+    const { speaker, speaker: { imageSrc, name }, year, activeSpeaker, selectSpeaker } = this.props
+    console.log(activeSpeaker, name)
+    return (
+      <ImageContainer>
+        <Image src={loadImage('speakers', year, imageSrc)} onClick={() => selectSpeaker(speaker)} isSelected={name === activeSpeaker} />
+      </ImageContainer>
+    )
+  }
 }

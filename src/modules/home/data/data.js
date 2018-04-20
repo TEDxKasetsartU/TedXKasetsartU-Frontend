@@ -16,70 +16,70 @@ const data = [
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'รวิศ หาญอุตสาหะ',
+        description: 'กรรมการผู้จัดการบริษัท ศรีจันทร์สหโอสถ จำกัด',
+        topic: 'เกลียดวันจันทร์?',
+        youtubeId: '23BA9X6Pphk'
+      },
+      {
+        imageSrc: '1.jpg',
+        name: 'อ.ดร. กาญจนพัน',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'อ.. กาญจนพันธุ์ สุขวิชชัย',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'อ.ดร. กาญจนพันธ สุขวิชชัย',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'อ.ดร. ญจนพันธุ์ สุขวิชชัย',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'อ.ดร. กาญจนพัน สุขวิชชัย',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'อ. กาญจนพันธุ์ ',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'อ.ดร. กาญจนพันธุ์ ',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'อ.ดร. กาญพันธุ์ สุขวิชชัย',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
       },
       {
         imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
-        description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-        topic: 'สมองกลสอนคน',
-        youtubeId: 'J66ua-ELj8I'
-      },
-      {
-        imageSrc: '1.jpg',
-        name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+        name: 'อ.ดร. กาญจนพันธุ์ สุขชชัย',
         description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
         topic: 'สมองกลสอนคน',
         youtubeId: 'J66ua-ELj8I'
