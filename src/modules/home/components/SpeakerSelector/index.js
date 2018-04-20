@@ -1,18 +1,19 @@
+import PropTypes from 'prop-types'
 import React from 'react'
+import ScrollContainer from 'common/components/ScrollContainer'
 import SpeakerCard from 'modules/home/components/SpeakerCard'
-import loadImage from 'common/utils/loadImage'
-import styled from 'styled-components'
-
-const BaseContainer = styled.div`
-  width: 100%;
-`
 
 const SpeakerSelector = props => (
-  <BaseContainer className='row'>
+  <ScrollContainer color='white'>
     {props.speakers.map((speaker) => (
       <SpeakerCard speaker={speaker} year={props.year} key={speaker.name} />
     ))}
-  </BaseContainer>
+  </ScrollContainer>
 )
+
+SpeakerSelector.propTypes = {
+  speakers: PropTypes.array,
+  year: PropTypes.number
+}
 
 export default SpeakerSelector
