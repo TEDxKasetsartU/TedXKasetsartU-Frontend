@@ -1,6 +1,6 @@
 const speakers = [
   {
-    name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+    name: 'อ.ดร. กาญจนพันธุ์ สุขวิชัย',
     image: 'https://res.cloudinary.com/keystone-demo/image/upload/v1492510365/tu4g2mfbcqoaaenixvny.jpg',
     speaker_info: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
     topic: 'โดราเอม่อนตอน บ้านเล็กๆบนภูเขาน้ำแข็ง',
@@ -8,7 +8,7 @@ const speakers = [
     youtube_url_id: 'https://www.youtube.com/watch?v=cDIPfkZYBhU'
   },
   {
-    name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+    name: 'อ.ดร. กาญจนพันธุ์ สุวิชชัย',
     image: 'https://res.cloudinary.com/keystone-demo/image/upload/v1492510365/tu4g2mfbcqoaaenixvny.jpg',
     speaker_info: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
     topic: 'โดราเอม่อนตอน บ้านเล็กๆบนภูเขาน้ำแข็ง',
@@ -16,7 +16,7 @@ const speakers = [
     youtube_url_id: 'https://www.youtube.com/watch?v=cDIPfkZYBhU'
   },
   {
-    name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+    name: 'อ.ดร. กาญจนพันธุ สุขวิชชัย',
     image: 'https://res.cloudinary.com/keystone-demo/image/upload/v1492510365/tu4g2mfbcqoaaenixvny.jpg',
     speaker_info: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
     topic: 'โดราเอม่อนตอน บ้านเล็กๆบนภูเขาน้ำแข็ง',
@@ -24,7 +24,7 @@ const speakers = [
     youtube_url_id: 'https://www.youtube.com/watch?v=cDIPfkZYBhU'
   },
   {
-    name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+    name: 'อ.ดร. กาญจนพัน์ สุขวิชชัย',
     image: 'https://res.cloudinary.com/keystone-demo/image/upload/v1492510365/tu4g2mfbcqoaaenixvny.jpg',
     speaker_info: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
     topic: 'โดราเอม่อนตอน บ้านเล็กๆบนภูเขาน้ำแข็ง',
@@ -32,7 +32,7 @@ const speakers = [
     youtube_url_id: 'https://www.youtube.com/watch?v=cDIPfkZYBhU'
   },
   {
-    name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+    name: 'อ.ดร. กาญจนธุ์ สุขวิชชัย',
     image: 'https://res.cloudinary.com/keystone-demo/image/upload/v1492510365/tu4g2mfbcqoaaenixvny.jpg',
     speaker_info: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
     topic: 'โดราเอม่อนตอน บ้านเล็กๆบนภูเขาน้ำแข็ง',
@@ -40,7 +40,7 @@ const speakers = [
     youtube_url_id: 'https://www.youtube.com/watch?v=cDIPfkZYBhU'
   },
   {
-    name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+    name: 'อ.ดร. กาพันธุ์ สุขวิชชัย',
     image: 'https://res.cloudinary.com/keystone-demo/image/upload/v1492510365/tu4g2mfbcqoaaenixvny.jpg',
     speaker_info: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
     topic: 'โดราเอม่อนตอน บ้านเล็กๆบนภูเขาน้ำแข็ง',
@@ -48,7 +48,7 @@ const speakers = [
     youtube_url_id: 'https://www.youtube.com/watch?v=cDIPfkZYBhU'
   },
   {
-    name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
+    name: 'อ.ดร. ญจนพันธุ์ สุขวิชชัย',
     image: 'https://res.cloudinary.com/keystone-demo/image/upload/v1492510365/tu4g2mfbcqoaaenixvny.jpg',
     speaker_info: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
     topic: 'โดราเอม่อนตอน บ้านเล็กๆบนภูเขาน้ำแข็ง',
