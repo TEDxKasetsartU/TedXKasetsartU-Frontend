@@ -9,7 +9,7 @@ const Nav = styled.nav`
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   font-weight: 500;
   color: white;
   transition: all 300ms;
@@ -44,9 +44,9 @@ export default () => (
       </div>
     </Link>
     <NavItem className='nav-item'>
-      <NavLink to='/event' className='nav-link'>EVENT</NavLink>
-      <NavLink to='#speakers' className='nav-link'>SPEAKERS</NavLink>
-      <NavLink to='/about' className='nav-link'>ABOUT</NavLink>
+      <NavLink href='#event' className='nav-link'>EVENT</NavLink>
+      <NavLink href='#speakers' className='nav-link'>SPEAKERS</NavLink>
+      <NavLink href='#about' className='nav-link'>ABOUT</NavLink>
     </NavItem>
   </Nav>
 )
