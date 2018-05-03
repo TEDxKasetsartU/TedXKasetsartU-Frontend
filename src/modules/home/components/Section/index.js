@@ -19,7 +19,7 @@ const Title = styled.h3`
 `
 
 const Section = props => (
-  <SectionContainer color={props.backgroundColor} className='d-flex align-items-center flex-column justify-content-center h-100'>
+  <SectionContainer color={props.backgroundColor} className='d-flex align-items-center flex-column justify-content-center h-100' id={props.id} >
     <Title color={props.titleColor}>{props.title}</Title>
     <Divider color={props.dividerColor} />
     {props.children}

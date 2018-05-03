@@ -8,7 +8,7 @@ const CoverContainer = styled.div`
 `
 
 const Cover = props => (
-  <CoverContainer>
+  <CoverContainer id='event'>
     <img src={loadImage('cover', props.year, props.cover)} alt='cover' className='img-fluid' />
   </CoverContainer>
 )
