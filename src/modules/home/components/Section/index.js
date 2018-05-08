@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionContainer = styled.div`
-    padding: 5% 0;
+    padding: 50px 0;
     background-color: ${props => props.color};
 `
 

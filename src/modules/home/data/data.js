@@ -88,26 +88,70 @@ const data = [
     partners: {
       patron: [
         {
-          imageSrc: 'eng-ku.jpg',
-          url: 'http://eng.ku.ac.th/'
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
+        },
+        {
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
+        },
+        {
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
         }
       ],
       platinum: [
         {
-          imageSrc: 'eng-ku.jpg',
-          url: 'http://eng.ku.ac.th/'
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
+        },
+        {
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
+        },
+        {
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
         }
       ],
       gold: [
         {
-          imageSrc: 'eng-ku.jpg',
-          url: 'http://eng.ku.ac.th/'
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
+        },
+        {
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
+        },
+        {
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
         }
       ],
       friends: [
         {
-          imageSrc: 'eng-ku.jpg',
-          url: 'http://eng.ku.ac.th/'
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
+        },
+        {
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
+        },
+        {
+          imageSrc: 'eng-ku.png',
+          url: 'http://eng.ku.ac.th/',
+          name: 'Engineer KU'
         }
       ]
     },
