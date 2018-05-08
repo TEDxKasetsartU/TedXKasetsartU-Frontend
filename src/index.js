@@ -9,6 +9,9 @@ import { injectGlobal } from 'styled-components'
 import { render } from 'react-dom'
 
 injectGlobal`
+  body {
+    background: black;
+  }
   h1, h2, h3, h4, h4, h5 {
     font-family: 'Kanit', sans-serif;
   }

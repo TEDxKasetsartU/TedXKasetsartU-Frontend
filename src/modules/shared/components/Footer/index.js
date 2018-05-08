@@ -1,16 +1,18 @@
 import IconLink from 'modules/shared/components/IconLink'
 import React from 'react'
-import TEDLogo from 'images/common/TEDxKasetsartU_logo-white-trim.png'
+import TEDLogo from 'images/common/TED2lineWhite.png'
 import styled from 'styled-components'
 
 const Footer = styled.footer`
   border-top: 2px solid red;
+  background-color: rgb(10, 10, 10);
 `
 
 const Content = styled.div`
   max-width: 1124px;
   margin: auto;
   padding: 1.5em 0;
+  color: white;
 `
 
 const Grid = styled.div`

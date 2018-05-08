@@ -1,11 +1,11 @@
-import React from 'react'
 import Icon from 'react-fontawesome'
 import PropTypes from 'prop-types'
+import React from 'react'
 import styled from 'styled-components'
 
 const Link = styled.a`
   font-size: 14px;
-  color: black;
+  color: white;
   transition: all 300ms;
 
   &:after {
