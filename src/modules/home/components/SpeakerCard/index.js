@@ -18,6 +18,10 @@ const Image = styled.img`
   transform: translateX(-15%);
   &:hover {
     filter: none;
+    transition: all 300ms;
+  }
+  &:after {
+    transition: transform 300ms ease-in-out;
   }
 `
 
