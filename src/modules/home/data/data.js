@@ -1,7 +1,8 @@
 const data = [
   {
-    year: 2017,
-    cover: '2017_cover.jpg',
+    year: 2018,
+    cover: 'cover.png',
+    mobile_cover: 'mcover.png',
     concept: {
       title: 'TAKE A CHANCE, MAKE A CHANGE',
       detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt scelerisque nibh, facilisis varius dolor ullamcorper in. Pellentesque diam leo, aliquam non magna et, molestie cursus ipsum. Pellentesque aliquet nec neque et pharetra. Aliquam quis consectetur sem, at interdum ex. Suspendisse ultrices mi ornare interdum lobortis.'
