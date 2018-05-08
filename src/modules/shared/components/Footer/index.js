@@ -4,7 +4,6 @@ import TEDLogo from 'images/common/TEDxKasetsartU_logo-white-trim.png'
 import styled from 'styled-components'
 
 const Footer = styled.footer`
-  margin-top: 4em;
   border-top: 2px solid red;
 `
 
