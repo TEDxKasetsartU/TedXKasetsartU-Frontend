@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import React from 'react'
 import TEDLogo from 'images/common/TEDWhiteLogo.png'
 import styled from 'styled-components'
@@ -38,15 +37,16 @@ const NavItem = styled.div`
 
 export default () => (
   <Nav className='navbar sticky-top'>
-    <Link to='/' className='navbar-brand'>
+    <a href='#' className='navbar-brand'>
       <div className='container'>
         <img src={TEDLogo} height='35' alt='' />
       </div>
-    </Link>
+    </a>
     <NavItem className='nav-item'>
-      <NavLink href='#event' className='nav-link'>EVENT</NavLink>
+      <NavLink href='#' className='nav-link'>EVENT</NavLink>
       <NavLink href='#speakers' className='nav-link'>SPEAKERS</NavLink>
-      <NavLink href='#about' className='nav-link'>ABOUT</NavLink>
+      <NavLink href='#partners' className='nav-link'>PARTNERS</NavLink>
+      <NavLink href='#volunteers' className='nav-link'>VOLUNTEERS</NavLink>
     </NavItem>
   </Nav>
 )
