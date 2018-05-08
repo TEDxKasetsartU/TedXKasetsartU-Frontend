@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import Section from 'modules/home/components/Section'
 import colors from 'common/mixins/colors'
@@ -8,7 +9,7 @@ const SponsorsContainer = styled.div`
   justify-content: center;
 `
 
-export default props => (
+const Sponsors = props => (
   <Section
     backgroundColor={colors.black}
     titleColor={colors.white}
@@ -30,3 +31,10 @@ export default props => (
     </SponsorsContainer>
   </Section>
 )
+
+Sponsors.propTypes = {
+  sponsors: PropTypes.object,
+  year: PropTypes.number
+}
+
+export default Sponsors
