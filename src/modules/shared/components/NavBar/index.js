@@ -37,13 +37,13 @@ const NavItem = styled.div`
 
 export default () => (
   <Nav className='navbar sticky-top'>
-    <a href='#' className='navbar-brand'>
+    <a href='# ' className='navbar-brand'>
       <div className='container'>
         <img src={TEDLogo} height='35' alt='' />
       </div>
     </a>
     <NavItem className='nav-item'>
-      <NavLink href='#' className='nav-link'>EVENT</NavLink>
+      <NavLink href='# ' className='nav-link'>EVENT</NavLink>
       <NavLink href='#speakers' className='nav-link'>SPEAKERS</NavLink>
       <NavLink href='#partners' className='nav-link'>PARTNERS</NavLink>
       <NavLink href='#volunteers' className='nav-link'>VOLUNTEERS</NavLink>
