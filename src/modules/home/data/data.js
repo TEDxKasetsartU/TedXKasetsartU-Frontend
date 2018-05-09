@@ -111,7 +111,7 @@ const data = [
           name: 'Engineer KU'
         },
         {
-          imageSrc: 'eng-ku.png',
+          imageSrc: 'AIS.png',
           url: 'http://eng.ku.ac.th/',
           name: 'Engineer KU'
         },
