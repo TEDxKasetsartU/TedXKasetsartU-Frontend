@@ -62,8 +62,9 @@ export default class NavBar extends React.PureComponent {
     showMenu: false
   }
 
-  showMenu = () => {
+  showMenu = (e) => {
     this.setState({ showMenu: true })
+    e.preventDefault()
   }
 
   componentDidMount () {
@@ -83,7 +84,7 @@ export default class NavBar extends React.PureComponent {
           </div>
         </a>
         <NavItem className='nav-item'>
-          <NavLink id='menu-btn' href='javascript:void(0)' className='nav-link d-block d-lg-none' onClick={() => this.showMenu()} ><Icon name='bars' size='lg' /></NavLink>
+          <NavLink id='menu-btn' href='' className='nav-link d-block d-lg-none' onClick={(e) => this.showMenu(e)} ><Icon name='bars' size='lg' /></NavLink>
           <MenuContainer showMenu={showMenu}>
             <NavLink href='# ' className='nav-link'>EVENT</NavLink>
             <NavLink href='#speakers' className='nav-link'>SPEAKERS</NavLink>
