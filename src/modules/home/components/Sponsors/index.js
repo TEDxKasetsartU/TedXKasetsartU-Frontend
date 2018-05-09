@@ -10,7 +10,7 @@ const SponsorsContainer = styled.div`
 `
 
 const SponsorLogo = styled.img`
-  padding: 10px;
+  margin: 10px;
 `
 
 const Sponsors = props => (
