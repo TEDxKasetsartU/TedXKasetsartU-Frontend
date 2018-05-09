@@ -1,3 +1,4 @@
+import Icon from 'react-fontawesome'
 import React from 'react'
 import TEDLogo from 'images/common/TEDWhiteLogo.png'
 import styled from 'styled-components'
@@ -28,25 +29,70 @@ const NavLink = styled.a`
   &:hover:after {
     transform: scaleX(1);
   }
+
+  
 `
 
 const NavItem = styled.div`
   display: flex;
-  flex-direction: row;
+  @media (max-width: 991px) {
+    position: relative;
+    display: inline-block;
+    &:hover {
+      display: block;
+    }
+  }
 `
 
-export default () => (
-  <Nav className='navbar sticky-top'>
-    <a href='# ' className='navbar-brand'>
-      <div className='container'>
-        <img src={TEDLogo} height='35' alt='' />
-      </div>
-    </a>
-    <NavItem className='nav-item'>
-      <NavLink href='# ' className='nav-link'>EVENT</NavLink>
-      <NavLink href='#speakers' className='nav-link'>SPEAKERS</NavLink>
-      <NavLink href='#partners' className='nav-link'>PARTNERS</NavLink>
-      <NavLink href='#volunteers' className='nav-link'>VOLUNTEERS</NavLink>
-    </NavItem>
-  </Nav>
-)
+const MenuContainer = styled.div`
+  display: flex;
+  @media (max-width: 991px) {
+    display: ${props => props.showMenu ? 'block' : 'none'};
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 120px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+    z-index: 1300;
+    right: 0;
+  }
+`
+
+export default class NavBar extends React.PureComponent {
+  state = {
+    showMenu: false
+  }
+
+  showMenu = (e) => {
+    this.setState({ showMenu: true })
+    e.preventDefault()
+  }
+
+  componentDidMount () {
+    const self = this
+    window.onclick = e => {
+      if (!e.target.matches('#menu-btn')) self.setState({ showMenu: false })
+    }
+  }
+
+  render () {
+    const { showMenu } = this.state
+    return (
+      <Nav className='navbar sticky-top'>
+        <a href='# ' className='navbar-brand'>
+          <div className='container'>
+            <img src={TEDLogo} height='35' alt='' />
+          </div>
+        </a>
+        <NavItem className='nav-item'>
+          <NavLink id='menu-btn' href='' className='nav-link d-block d-lg-none' onClick={(e) => this.showMenu(e)} ><Icon name='bars' size='lg' /></NavLink>
+          <MenuContainer showMenu={showMenu}>
+            <NavLink href='# ' className='nav-link'>EVENT</NavLink>
+            <NavLink href='#speakers' className='nav-link'>SPEAKERS</NavLink>
+            <NavLink href='#partners' className='nav-link'>PARTNERS</NavLink>
+            <NavLink href='#volunteers' className='nav-link'>VOLUNTEERS</NavLink>
+          </MenuContainer>
+        </NavItem>
+      </Nav>
+    )
+  }
+}
