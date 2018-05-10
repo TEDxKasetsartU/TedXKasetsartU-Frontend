@@ -4,6 +4,7 @@ import Location from 'modules/home/components/Location'
 import React from 'react'
 import Speakers from 'modules/home/components/Speakers'
 import Sponsors from 'modules/home/components/Sponsors'
+import Volunteers from 'modules/home/components/Volunteers'
 import data from 'modules/home/data/data'
 
 export default () => (
@@ -13,5 +14,6 @@ export default () => (
     { data[0].live.isLive && <Live live={data[0].live} /> }
     <Speakers speakers={data[0].speakers} year={data[0].year} />
     <Sponsors sponsors={data[0].partners} year={data[0].year} />
+    <Volunteers />
   </div>
 )
