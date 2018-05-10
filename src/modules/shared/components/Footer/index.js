@@ -38,7 +38,7 @@ const CopyRight = styled.small.attrs({
 export default () => (
   <Footer>
     <Content>
-      <div className='row align-items-center no-gutters'>
+      <div className='row align-items-center no-gutters container'>
         <div className='col-md text-center'>
           <img src={TEDLogo} className='img-fluid' width='300' alt='tedxku' />
         </div>
