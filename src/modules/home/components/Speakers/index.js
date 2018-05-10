@@ -45,7 +45,7 @@ class Speakers extends React.PureComponent {
         { selectedSpeaker &&
           (<SpeakerDetail>
             <SpeakerHeadline title={selectedSpeaker.topic} author={selectedSpeaker.name} />
-            <YoutubePlayer id={selectedSpeaker.youtubeId} title={selectedSpeaker.title} />
+            { selectedSpeaker.youtubeId && <YoutubePlayer id={selectedSpeaker.youtubeId} title={selectedSpeaker.title} /> }
           </SpeakerDetail>)
         }
       </Section>
