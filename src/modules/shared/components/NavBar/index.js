@@ -86,7 +86,7 @@ export default class NavBar extends React.PureComponent {
         <NavItem className='nav-item'>
           <NavLink id='menu-btn' href='' className='nav-link d-block d-lg-none' onClick={(e) => this.showMenu(e)} ><Icon name='bars' size='lg' /></NavLink>
           <MenuContainer showMenu={showMenu}>
-            <NavLink href='# ' className='nav-link'>EVENT</NavLink>
+            <NavLink href='#event' className='nav-link'>EVENT</NavLink>
             <NavLink href='#speakers' className='nav-link'>SPEAKERS</NavLink>
             <NavLink href='#partners' className='nav-link'>PARTNERS</NavLink>
             <NavLink href='#volunteers' className='nav-link'>VOLUNTEERS</NavLink>

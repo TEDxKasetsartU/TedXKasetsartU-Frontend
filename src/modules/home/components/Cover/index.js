@@ -10,10 +10,10 @@ const CoverContainer = styled.div`
 
 const Cover = props => (
   <Fragment>
-    <CoverContainer id='event' className='d-none d-md-block'>
+    <CoverContainer className='d-none d-md-block'>
       <img src={loadImage('cover', props.year, props.cover)} alt='cover' className='img-fluid' />
     </CoverContainer>
-    <CoverContainer id='event' className='d-block d-md-none'>
+    <CoverContainer className='d-block d-md-none'>
       <img src={loadImage('cover', props.year, props.mcover)} alt='cover' className='img-fluid' />
     </CoverContainer>
   </Fragment>
