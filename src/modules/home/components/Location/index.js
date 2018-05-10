@@ -61,7 +61,7 @@ const Location = props => {
   const startDate = moment.tz(start, 'Asia/Bangkok')
   const endDate = moment.tz(end, 'Asia/Bangkok')
   const endTicketDate = moment.tz(ticketEnd, 'Asia/Bangkok')
-  const now = moment().tz('Asis/Bangkok')
+  const now = moment().tz('Asia/Bangkok')
   const leftTicketDay = endTicketDate.diff(now, 'days')
   const leftTicketHours = endTicketDate.diff(now, 'hours')
   const leftDay = endDate.diff(now, 'days')
