@@ -32,7 +32,7 @@ const Volunteers = props => (
 )
 
 Volunteers.propTypes = {
-  volunteers: PropTypes.object
+  volunteers: PropTypes.array
 }
 
 export default Volunteers
