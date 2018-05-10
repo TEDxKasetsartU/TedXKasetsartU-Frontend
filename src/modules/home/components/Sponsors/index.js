@@ -11,6 +11,14 @@ const SponsorsContainer = styled.div`
 
 const SponsorLogo = styled.img`
   padding: 10px;
+  filter: grayscale(25%);
+  &:hover {
+    filter: none;
+    transition: all 300ms;
+  }
+  &:after {
+    transition: transform 300ms ease-in-out;
+  }
 `
 
 const Sponsors = props => (
