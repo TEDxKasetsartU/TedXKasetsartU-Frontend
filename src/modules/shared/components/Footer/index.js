@@ -1,11 +1,12 @@
 import IconLink from 'modules/shared/components/IconLink'
 import React from 'react'
 import TEDLogo from 'images/common/TED2lineWhite.png'
+import colors from 'common/mixins/colors'
 import styled from 'styled-components'
 
 const Footer = styled.footer`
   border-top: 2px solid red;
-  background-color: rgb(10, 10, 10);
+  background-color: ${colors.black};
 `
 
 const Content = styled.div`
