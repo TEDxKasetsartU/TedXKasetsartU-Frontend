@@ -17,5 +17,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(morgan('dev'))
 
 app.use(express.static(path.resolve(__dirname, '../build')))
+app.get('*', (request, response) => {
+  const filePath = path.resolve(__dirname, '../build', 'index.html')
+  response.sendFile(filePath)
+})
 
 app.listen(PORT, () => console.log(`TEDxKU Frontend is serving at ${PORT}`))
