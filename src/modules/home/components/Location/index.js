@@ -2,7 +2,9 @@ import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 import Section from 'modules/home/components/Section'
+import TEDLogo from 'images/common/TEDWhiteLogo.png'
 import colors from 'common/mixins/colors'
+import loadImage from 'common/utils/loadImage'
 import moment from 'moment-timezone'
 import styled from 'styled-components'
 
@@ -26,6 +28,8 @@ const InfoSection = styled.div`
 `
 
 const DetailSection = styled(InfoSection)`
+    font-weight: 500;
+    margin: auto 0;
     @media (max-width: 991px) {
         text-align: center;
     }
@@ -56,8 +60,17 @@ const BookButton = styled.a`
     font-weight: bold;
 `
 
+const ConceptImage = styled.img`
+    margin: 16px 0;
+    @media (max-width: 991px) {
+        margin: 16px;
+    }
+`
+
 const Location = props => {
-  const { googleMap, start, end, ticketEnd, name } = props.location
+  const { year, concept, location } = props
+  const { text, imgSrc } = concept
+  const { googleMap, start, end, ticketEnd, name } = location
   const startDate = moment.tz(start, 'Asia/Bangkok')
   const endDate = moment.tz(end, 'Asia/Bangkok')
   const endTicketDate = moment.tz(ticketEnd, 'Asia/Bangkok')
@@ -82,10 +95,10 @@ const Location = props => {
             </MapContainer>
           </InfoSection>
           <DetailSection className='col-12 col-lg-6'>
-            <h2>TEDxKasetsartU 2018</h2>
-            <h2>Out of Norm</h2>
-            <h4>{`@${name}`}</h4>
-            <h4>{startDate.format('DD MMM YYYY')}</h4>
+            <img src={TEDLogo} height='40' alt='' />
+            <ConceptImage src={loadImage('cover', year, imgSrc)} alt={text} height='25' />
+            <h5>{`@${name}`}</h5>
+            <h5>{startDate.format('DD MMM YYYY')}</h5>
             <h5>{`${startDate.format('HH:mm')} - ${endDate.format('HH:mm')}`}</h5>
             { now.isBefore(endTicketDate) && (
               <Fragment>
@@ -113,7 +126,9 @@ const Location = props => {
 }
 
 Location.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object,
+  year: PropTypes.number,
+  concept: PropTypes.object
 }
 
 export default Location
