@@ -5,8 +5,12 @@ import 'font-awesome/css/font-awesome.css'
 
 import App from './App'
 import React from 'react'
+import ReactGA from 'react-ga'
 import { injectGlobal } from 'styled-components'
 import { render } from 'react-dom'
+
+ReactGA.initialize(process.env.ANALYTIC)
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 injectGlobal`
   body {
