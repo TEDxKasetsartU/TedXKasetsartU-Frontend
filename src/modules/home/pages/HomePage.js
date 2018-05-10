@@ -14,6 +14,6 @@ export default () => (
     { data[0].live.isLive && <Live live={data[0].live} /> }
     <Speakers speakers={data[0].speakers} year={data[0].year} />
     <Sponsors sponsors={data[0].partners} year={data[0].year} />
-    <Volunteers />
+    <Volunteers volunteers={data[0].volunteers} year={data[0].year} />
   </div>
 )
