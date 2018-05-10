@@ -17,7 +17,7 @@ const Sponsors = props => (
   <Section
     backgroundColor={colors.black}
     titleColor={colors.white}
-    dividerColor={colors.white}
+    dividerColor={colors.red}
     title='Partners'
     id='partners'
   >

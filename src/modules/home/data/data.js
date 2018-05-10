@@ -4,8 +4,11 @@ const data = [
     cover: 'cover.png',
     mobile_cover: 'mcover.png',
     location: {
-      google_map: '!1m18!1m12!1m3!1d3875.537280325659!2d100.53281331441427!3d13.746441240350887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ecdff27bf31%3A0xaac7a9b518db34df!2z4Liq4Lii4Liy4Lih4Lig4Liy4Lin4Lil4Lix4LiiIOC4o-C4reC4ouC4seC4pSDguYHguIHguKPguJnguJTguYzguYDguJjguLXguKLguYDguJXguK3guKPguYw!5e0!3m2!1sen!2sth!4v1525936189900',
-      location_name: 'Siam Pavalai Royal Grand Thetre'
+      googleMap: '!1m18!1m12!1m3!1d3875.537280325659!2d100.53281331441427!3d13.746441240350887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ecdff27bf31%3A0xaac7a9b518db34df!2z4Liq4Lii4Liy4Lih4Lig4Liy4Lin4Lil4Lix4LiiIOC4o-C4reC4ouC4seC4pSDguYHguIHguKPguJnguJTguYzguYDguJjguLXguKLguYDguJXguK3guKPguYw!5e0!3m2!1sen!2sth!4v1525936189900',
+      name: 'Siam Pavalai Royal Grand Theatre',
+      start: new Date('2018-05-27 16:00'),
+      end: new Date('2018-05-27 21:30'),
+      ticketEnd: new Date('2018-05-22 23:59')
     },
     concept: {
       title: 'TAKE A CHANCE, MAKE A CHANGE',
