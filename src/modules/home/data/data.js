@@ -18,9 +18,7 @@ const data = [
       {
         imageSrc: '1.jpg',
         name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
-        description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-        topic: 'สมองกลสอนคน',
-        youtubeId: 'J66ua-ELj8I'
+        description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014'
       },
       {
         imageSrc: '1.jpg',

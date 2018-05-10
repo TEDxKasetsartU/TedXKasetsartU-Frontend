@@ -5,6 +5,7 @@ import SpeakerHeadline from 'modules/home/components/SpeakerHeadline'
 import SpeakerSelector from 'modules/home/components/SpeakerSelector'
 import YoutubePlayer from 'modules/home/components/YoutubePlayer'
 import colors from 'common/mixins/colors'
+import loadImage from 'common/utils/loadImage'
 import styled from 'styled-components'
 
 const SpeakerDetail = styled.div`
@@ -15,6 +16,11 @@ const SpeakerDetail = styled.div`
     @media screen and (min-width: 769px){
         width: 60%;
     }
+`
+
+const SpeakerPicture = styled.img`
+  margin: 5% 0;
+  width: 100%;
 `
 
 class Speakers extends React.PureComponent {
@@ -45,7 +51,10 @@ class Speakers extends React.PureComponent {
         { selectedSpeaker &&
           (<SpeakerDetail>
             <SpeakerHeadline title={selectedSpeaker.topic} author={selectedSpeaker.name} />
-            { selectedSpeaker.youtubeId && <YoutubePlayer id={selectedSpeaker.youtubeId} title={selectedSpeaker.title} /> }
+            { selectedSpeaker.youtubeId
+              ? <YoutubePlayer id={selectedSpeaker.youtubeId} title={selectedSpeaker.title} />
+              : <SpeakerPicture src={loadImage('speakers', year, selectedSpeaker.imageSrc)} />
+            }
           </SpeakerDetail>)
         }
       </Section>

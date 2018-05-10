@@ -1,5 +1,6 @@
+import React, { Fragment } from 'react'
+
 import PropTypes from 'prop-types'
-import React from 'react'
 import colors from 'common/mixins/colors'
 import styled from 'styled-components'
 
@@ -22,12 +23,18 @@ const Author = styled.span`
 
 const SpeakerHeadline = props => (
   <SpeakerHeadlineContainer className='text-center'>
-    <div>
-      <Title>{props.title}</Title>
-    </div>
-    <div>
-      <Author>{props.author}</Author>
-    </div>
+    { props.title
+      ? (
+        <Fragment>
+          <div>
+            <Title>{props.title}</Title>
+          </div>
+          <div>
+            <Author>{props.author}</Author>
+          </div>
+        </Fragment>
+      ) : <div><Title>{props.author}</Title></div>
+    }
   </SpeakerHeadlineContainer>
 )
 
