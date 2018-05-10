@@ -4,6 +4,9 @@ const compression = require('compression')
 const bodyParser = require('body-parser')
 const path = require('path')
 const morgan = require('morgan')
+const dotEnv = require('dotenv')
+
+dotEnv.config()
 
 const app = express()
 const PORT = process.env.PORT
