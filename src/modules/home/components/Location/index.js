@@ -8,15 +8,26 @@ import styled from 'styled-components'
 
 const LocationContainer = styled.div`
     width: 100%;
-    @media (max-width: 992px) {
+    margin: auto;
+    @media (max-width: 991px) {
         flex-direction: column-reverse;
     }
 `
 
 const InfoSection = styled.div`
     color: white;
+    padding: 10px 0;
     @media (min-width: 992px) {
+        padding: 20px;
+    }
+    @media (min-width: 1200px) {
         padding: 50px;
+    }
+`
+
+const DetailSection = styled(InfoSection)`
+    @media (max-width: 991px) {
+        text-align: center;
     }
 `
 
@@ -35,6 +46,14 @@ const GoogleMapFrame = styled.iframe`
 
 const RedText = styled.span`
     color: ${colors.red};
+`
+
+const BookButton = styled.a`
+    border-radius: 0rem;
+    border-width: 1px;
+    font-size: 1.25rem;
+    margin: 5px 0;
+    font-weight: bold;
 `
 
 const Location = props => {
@@ -62,7 +81,7 @@ const Location = props => {
               <GoogleMapFrame src={`https://www.google.com/maps/embed?pb=${googleMap}`} allowfullscreen />
             </MapContainer>
           </InfoSection>
-          <InfoSection className='col-12 col-lg-6'>
+          <DetailSection className='col-12 col-lg-6'>
             <h2>TEDxKasetsartU 2018</h2>
             <h2>Out of Norm</h2>
             <h4>{`@${name}`}</h4>
@@ -74,6 +93,7 @@ const Location = props => {
                   ? (<h5><RedText>{leftTicketDay}</RedText> Days Left to Get Ticket !</h5>)
                   : (<h5><RedText>{leftTicketHours}</RedText> Hours Left to Get Ticket !</h5>)
                 }
+                <BookButton className='btn btn-outline-danger' href='https://line.me/R/ti/p/%40tedxkasetsartu' >Book Now</BookButton>
               </Fragment>
             )
             }
@@ -85,7 +105,7 @@ const Location = props => {
                 }
               </Fragment>
             ) }
-          </InfoSection>
+          </DetailSection>
         </LocationContainer>
       </div>
     </Section>
