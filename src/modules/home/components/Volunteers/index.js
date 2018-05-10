@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import ScrollContainer from 'common/components/ScrollContainer'
 import Section from 'modules/home/components/Section'
@@ -29,5 +30,9 @@ const Volunteers = props => (
     </ScrollContainer>
   </Section>
 )
+
+Volunteers.propTypes = {
+  volunteers: PropTypes.object
+}
 
 export default Volunteers

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import colors from 'common/mixins/colors'
 import loadImage from 'common/utils/loadImage'
@@ -49,5 +50,12 @@ const VolunteerCard = props => (
     </InfoOverlay>
   </CardContainer>
 )
+
+VolunteerCard.propTypes = {
+  name: PropTypes.string,
+  year: PropTypes.number,
+  position: PropTypes.string,
+  imageSrc: PropTypes.string
+}
 
 export default VolunteerCard
