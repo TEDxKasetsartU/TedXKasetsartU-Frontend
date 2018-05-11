@@ -8,11 +8,11 @@ import Router from 'Router'
 import data from 'data/2018'
 
 export default () => {
-  const { live: { isLive } } = data
+  const { live: { isLive }, year, concept: { text }, location: { name } } = data
   return (
     <BrowserRouter>
       <Fragment>
-        <Header />
+        <Header year={year} concept={text} location={name} />
         <NavBar isLive={isLive} />
         <Router />
         <Footer />

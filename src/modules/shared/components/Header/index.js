@@ -1,29 +1,42 @@
-import Cover from 'images/2018/cover/thumbnail.png'
 import { Helmet } from 'react-helmet'
+import PropTypes from 'prop-types'
 import React from 'react'
+import loadImage from 'common/utils/loadImage'
 
 const URL = process.env.REACT_APP_HOST
 const APP_ID = process.env.REACT_APP_FACEBOOK_APP_ID
 
-export default props => (
-  <Helmet>
-    <title>TEDxKasetsartU 2018 - OUT OF NORM</title>
-    <meta name='description' content='TEDxKasetsartU 2018 - OUT OF NORM @Siam Pavalai Royal Grand Theatre' />
-    <meta property='fb:app_id' content={APP_ID} />
-    <meta property='og:title' content='TEDxKasetsartU 2018 - OUT OF NORM' />
-    <meta property='og:description' content='TEDxKasetsartU 2018 - OUT OF NORM @Siam Pavalai Royal Grand Theatre' />
-    <meta property='og:url' content={URL} />
-    <meta property='og:type' content='event' />
-    <meta property='og:site_name' content='TEDxKasetsartU 2018 - OUT OF NORM' />
-    <meta property='og:image' content={`${URL}${Cover.slice(1)}`} />
-    <meta property='og:image:width' content='1201' />
-    <meta property='og:image:height' content='686' />
-    <meta name='twitter:card' content='summary' />
-    <meta name='twitter:title' content='TEDxKasetsartU 2018 - OUT OF NORM' />
-    <meta name='twitter:description' content='TEDxKasetsartU 2018 - OUT OF NORM @Siam Pavalai Royal Grand Theatre' />
-    <meta name='twitter:url' content={URL} />
-    <meta name='twitter:image' content={`${URL}${Cover.slice(1)}`} />
-    <meta name='twitter:site' content='@TEDxKasetsartU' />
-    <meta name='twitter:creator' content='@TEDxKasetsartU' />
-  </Helmet>
-)
+const Header = props => {
+  const { year, concept, location } = props
+  const title = `TEDxKasetsartU ${year} - ${concept}`
+  const description = `${title} @${location}`
+  const thumbnail = `${URL}${loadImage('cover', year, 'thumbnail.png').slice(1)}`
+  return (
+    <Helmet>
+      <title>${title}</title>
+      <meta name='description' content={description} />
+      <meta property='fb:app_id' content={APP_ID} />
+      <meta property='og:title' content={title} />
+      <meta property='og:description' content={description} />
+      <meta property='og:url' content={URL} />
+      <meta property='og:type' content='event' />
+      <meta property='og:site_name' content={title} />
+      <meta property='og:image' content={thumbnail} />
+      <meta name='twitter:card' content='summary' />
+      <meta name='twitter:title' content={title} />
+      <meta name='twitter:description' content={description} />
+      <meta name='twitter:url' content={URL} />
+      <meta name='twitter:image' content={thumbnail} />
+      <meta name='twitter:site' content='@TEDxKasetsartU' />
+      <meta name='twitter:creator' content='@TEDxKasetsartU' />
+    </Helmet>
+  )
+}
+
+Header.propTypes = {
+  year: PropTypes.number,
+  concept: PropTypes.string,
+  location: PropTypes.string
+}
+
+export default Header
