@@ -8,12 +8,12 @@ import Sponsors from 'modules/home/components/Sponsors'
 import Volunteers from 'modules/home/components/Volunteers'
 
 const HomePage = props => {
-  const { year, location, concept, speakers, partners, volunteers, live } = props.data
+  const { year, location, concept, speakers, partners, volunteers, live: { isLive, channel } } = props.data
   return (
     <div>
       <Cover year={year} />
       <Location location={location} year={year} concept={concept} />
-      { live.isLive && <Live live={live} /> }
+      { isLive && <Live channel={channel} /> }
       <Speakers speakers={speakers} year={year} />
       <Sponsors sponsors={partners} year={year} />
       <Volunteers volunteers={volunteers} year={year} />
