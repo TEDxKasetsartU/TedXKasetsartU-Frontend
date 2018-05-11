@@ -12,12 +12,12 @@ const Live = props => (
     title='Live'
     id='live'
   >
-    <YoutubePlayer id={`live_stream?channel=${props.live.channel}&autoplay=1`} title='TEDxKasetsartU Live' />
+    <YoutubePlayer id={`live_stream?channel=${props.channel}&autoplay=1`} title='TEDxKasetsartU Live' />
   </Section>
 )
 
 Live.propTypes = {
-  live: PropTypes.object
+  channel: PropTypes.string
 }
 
 export default Live

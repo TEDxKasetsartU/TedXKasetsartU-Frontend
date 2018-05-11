@@ -39,17 +39,20 @@ const ImageCard = styled.img`
     display: block;
 `
 
-const VolunteerCard = props => (
-  <CardContainer>
-    <ImageCard src={loadImage('volunteers', props.year, props.imageSrc)} alt={props.name} />
-    <InfoOverlay>
-      <InfoContainer>
-        <p>{props.name}</p>
-        <p>{props.position}</p>
-      </InfoContainer>
-    </InfoOverlay>
-  </CardContainer>
-)
+const VolunteerCard = props => {
+  const { name, imageSrc, year, position } = props
+  return (
+    <CardContainer>
+      <ImageCard src={loadImage('volunteers', year, imageSrc)} alt={name} />
+      <InfoOverlay>
+        <InfoContainer>
+          <p>{name}</p>
+          <p>{position}</p>
+        </InfoContainer>
+      </InfoOverlay>
+    </CardContainer>
+  )
+}
 
 VolunteerCard.propTypes = {
   name: PropTypes.string,

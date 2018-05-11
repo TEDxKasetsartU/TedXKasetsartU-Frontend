@@ -1,19 +1,28 @@
 import Cover from 'modules/home/components/Cover'
 import Live from 'modules/home/components/Live'
 import Location from 'modules/home/components/Location'
+import PropTypes from 'prop-types'
 import React from 'react'
 import Speakers from 'modules/home/components/Speakers'
 import Sponsors from 'modules/home/components/Sponsors'
 import Volunteers from 'modules/home/components/Volunteers'
-import data from 'modules/home/data/data'
 
-export default () => (
-  <div>
-    <Cover cover={data[0].cover} mcover={data[0].mobile_cover} year={data[0].year} />
-    <Location location={data[0].location} year={data[0].year} concept={data[0].concept} />
-    { data[0].live.isLive && <Live live={data[0].live} /> }
-    <Speakers speakers={data[0].speakers} year={data[0].year} />
-    <Sponsors sponsors={data[0].partners} year={data[0].year} />
-    <Volunteers volunteers={data[0].volunteers} year={data[0].year} />
-  </div>
-)
+const HomePage = props => {
+  const { year, location, concept, speakers, partners, volunteers, live: { isLive, channel } } = props.data
+  return (
+    <div>
+      <Cover year={year} />
+      <Location location={location} year={year} concept={concept} />
+      { isLive && <Live channel={channel} /> }
+      <Speakers speakers={speakers} year={year} />
+      <Sponsors sponsors={partners} year={year} />
+      <Volunteers volunteers={volunteers} year={year} />
+    </div>
+  )
+}
+
+HomePage.propTypes = {
+  data: PropTypes.object
+}
+
+export default HomePage

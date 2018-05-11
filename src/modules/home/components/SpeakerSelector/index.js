@@ -3,13 +3,21 @@ import React from 'react'
 import ScrollContainer from 'common/components/ScrollContainer'
 import SpeakerCard from 'modules/home/components/SpeakerCard'
 
-const SpeakerSelector = props => (
-  <ScrollContainer color='white'>
-    {props.speakers.map((speaker) => (
-      <SpeakerCard speaker={speaker} year={props.year} key={speaker.name} activeSpeaker={props.activeSpeaker} selectSpeaker={props.selectSpeaker} />
-    ))}
-  </ScrollContainer>
-)
+const SpeakerSelector = props => {
+  const { year, activeSpeaker, selectSpeaker } = props
+  return (
+    <ScrollContainer color='white'>
+      {
+        props.speakers.map((speaker) => {
+          const { name } = speaker
+          return (
+            <SpeakerCard speaker={speaker} year={year} key={name} activeSpeaker={activeSpeaker} selectSpeaker={selectSpeaker} />
+          )
+        })
+      }
+    </ScrollContainer>
+  )
+}
 
 SpeakerSelector.propTypes = {
   speakers: PropTypes.array,

@@ -1,4 +1,5 @@
 import Icon from 'react-fontawesome'
+import PropTypes from 'prop-types'
 import React from 'react'
 import TEDLogo from 'images/common/TEDWhiteLogo.png'
 import styled from 'styled-components'
@@ -57,7 +58,7 @@ const MenuContainer = styled.div`
   }
 `
 
-export default class NavBar extends React.PureComponent {
+class NavBar extends React.PureComponent {
   state = {
     showMenu: false
   }
@@ -76,6 +77,7 @@ export default class NavBar extends React.PureComponent {
 
   render () {
     const { showMenu } = this.state
+    const { isLive } = this.props
     return (
       <Nav className='navbar sticky-top'>
         <a href='# ' className='navbar-brand'>
@@ -87,6 +89,7 @@ export default class NavBar extends React.PureComponent {
           <NavLink id='menu-btn' href='' className='nav-link d-block d-lg-none' onClick={(e) => this.showMenu(e)} ><Icon name='bars' size='lg' /></NavLink>
           <MenuContainer showMenu={showMenu}>
             <NavLink href='#event' className='nav-link'>EVENT</NavLink>
+            { isLive && <NavLink href='#live' className='nav-link'><Icon name='circle' size='md' /> LIVE</NavLink>}
             <NavLink href='#speakers' className='nav-link'>SPEAKERS</NavLink>
             <NavLink href='#partners' className='nav-link'>PARTNERS</NavLink>
             <NavLink href='#volunteers' className='nav-link'>VOLUNTEERS</NavLink>
@@ -96,3 +99,9 @@ export default class NavBar extends React.PureComponent {
     )
   }
 }
+
+NavBar.propTypes = {
+  isLive: PropTypes.bool
+}
+
+export default NavBar
