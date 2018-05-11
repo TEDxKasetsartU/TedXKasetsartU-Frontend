@@ -10,13 +10,14 @@ const CoverContainer = styled.div`
 
 const Cover = props => {
   const { year } = props
+  const alt = 'TEDxKasetsartU Cover'
   return (
     <Fragment>
       <CoverContainer className='d-none d-md-block'>
-        <img src={loadImage('cover', year, 'cover.png')} alt='TEDxKasetsartU Cover' className='img-fluid' />
+        <img src={loadImage('cover', year, 'cover.png')} alt={alt} className='img-fluid' />
       </CoverContainer>
       <CoverContainer className='d-block d-md-none'>
-        <img src={loadImage('cover', year, 'mcover.png')} alt='TEDxKasetsartU Cover' className='img-fluid' />
+        <img src={loadImage('cover', year, 'mcover.png')} alt={alt} className='img-fluid' />
       </CoverContainer>
     </Fragment>
   )
