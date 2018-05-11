@@ -8,20 +8,21 @@ const CoverContainer = styled.div`
     width: 100%;
 `
 
-const Cover = props => (
-  <Fragment>
-    <CoverContainer className='d-none d-md-block'>
-      <img src={loadImage('cover', props.year, props.cover)} alt='cover' className='img-fluid' />
-    </CoverContainer>
-    <CoverContainer className='d-block d-md-none'>
-      <img src={loadImage('cover', props.year, props.mcover)} alt='cover' className='img-fluid' />
-    </CoverContainer>
-  </Fragment>
-)
+const Cover = props => {
+  const { year } = props
+  return (
+    <Fragment>
+      <CoverContainer className='d-none d-md-block'>
+        <img src={loadImage('cover', year, 'cover.png')} alt='TEDxKasetsartU Cover' className='img-fluid' />
+      </CoverContainer>
+      <CoverContainer className='d-block d-md-none'>
+        <img src={loadImage('cover', year, 'mcover.png')} alt='TEDxKasetsartU Cover' className='img-fluid' />
+      </CoverContainer>
+    </Fragment>
+  )
+}
 
 Cover.propTypes = {
-  cover: PropTypes.string,
-  mcover: PropTypes.string,
   year: PropTypes.number
 }
 
