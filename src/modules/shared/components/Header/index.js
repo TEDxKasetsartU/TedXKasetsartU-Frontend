@@ -3,11 +3,13 @@ import { Helmet } from 'react-helmet'
 import React from 'react'
 
 const URL = process.env.REACT_APP_HOST
+const APP_ID = process.env.REACT_APP_FACEBOOK_APP_ID
 
 export default props => (
   <Helmet>
     <title>TEDxKasetsartU 2018 - OUT OF NORM</title>
     <meta name='description' content='TEDxKasetsartU 2018 - OUT OF NORM @Siam Pavalai Royal Grand Theatre' />
+    <meta property='fb:app_id' content={APP_ID} />
     <meta property='og:title' content='TEDxKasetsartU 2018 - OUT OF NORM' />
     <meta property='og:description' content='TEDxKasetsartU 2018 - OUT OF NORM @Siam Pavalai Royal Grand Theatre' />
     <meta property='og:url' content={URL} />
