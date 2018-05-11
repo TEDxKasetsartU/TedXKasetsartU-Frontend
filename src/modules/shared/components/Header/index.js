@@ -2,7 +2,7 @@ import Cover from 'images/2018/cover/cover.png'
 import { Helmet } from 'react-helmet'
 import React from 'react'
 
-const URL = document.URL
+const URL = process.env.HOST
 
 export default props => (
   <Helmet>
