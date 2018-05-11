@@ -9,7 +9,7 @@ import ReactGA from 'react-ga'
 import { injectGlobal } from 'styled-components'
 import { render } from 'react-snapshot'
 
-ReactGA.initialize(process.env.ANALYTIC)
+ReactGA.initialize(process.env.REACT_APP_G_ANALYTIC)
 ReactGA.pageview(window.location.pathname + window.location.search)
 
 injectGlobal`

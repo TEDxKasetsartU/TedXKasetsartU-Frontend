@@ -23,3 +23,6 @@ yarn-error.log*
 # yarn
 yarn.lock
 package-lock.json
+
+.env.development
+.env.production
