@@ -15,24 +15,28 @@ const GridVolunteers = styled.div`
     padding: 30px;
 `
 
-const Volunteers = props => (
-  <Section
-    backgroundColor={colors.black}
-    titleColor={colors.white}
-    dividerColor={colors.red}
-    title='Volunteers'
-    id='volunteers'
-  >
-    <ScrollContainer color='white'>
-      <GridVolunteers>
-        { props.volunteers.map(({ imageSrc, name, position }) => <VolunteerCard key={name} imageSrc={imageSrc} name={name} position={position} year={props.year} />)}
-      </GridVolunteers>
-    </ScrollContainer>
-  </Section>
-)
+const Volunteers = props => {
+  const { year } = props
+  return (
+    <Section
+      backgroundColor={colors.black}
+      titleColor={colors.white}
+      dividerColor={colors.red}
+      title='Volunteers'
+      id='volunteers'
+    >
+      <ScrollContainer color='white'>
+        <GridVolunteers>
+          { props.volunteers.map(({ imageSrc, name, position }) => <VolunteerCard key={name} imageSrc={imageSrc} name={name} position={position} year={year} />)}
+        </GridVolunteers>
+      </ScrollContainer>
+    </Section>
+  )
+}
 
 Volunteers.propTypes = {
-  volunteers: PropTypes.array
+  volunteers: PropTypes.array,
+  year: PropTypes.number
 }
 
 export default Volunteers
