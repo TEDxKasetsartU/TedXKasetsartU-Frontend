@@ -12,10 +12,12 @@ export default props => (
     <meta property='og:type' content='event' />
     <meta property='og:site_name' content='TEDxKasetsartU 2018 - OUT OF NORM' />
     <meta property='og:image' content={`${window.location.href}${Cover}`} />
-    <meta name='twitter:card' content='TEDxKasetsartU 2018 - OUT OF NORM @Siam Pavalai Royal Grand Theatre' />
+    <meta name='twitter:card' content='summary' />
     <meta name='twitter:title' content='TEDxKasetsartU 2018 - OUT OF NORM' />
     <meta name='twitter:description' content='TEDxKasetsartU 2018 - OUT OF NORM @Siam Pavalai Royal Grand Theatre' />
     <meta name='twitter:url' content={window.location.href} />
     <meta name='twitter:image' content={`${window.location.href}${Cover}`} />
+    <meta name='twitter:site' content='@TEDxKasetsartU' />
+    <meta name='twitter:creator' content='@TEDxKasetsartU' />
   </Helmet>
 )
