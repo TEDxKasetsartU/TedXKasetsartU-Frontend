@@ -39,7 +39,7 @@ const EventDetail = props => {
   const { location, start, end, endTicket, year, concept, bookUrl } = props
   return (
     <Fragment>
-      <img src={TEDLogo} height='40' alt='' />
+      <img src={TEDLogo} height='40' alt='TEDxKasetsartU' />
       <ConceptImage src={loadImage('cover', year, 'concept.png')} alt={concept} height='25' />
       <h5>{`@${location}`}</h5>
       <h5>{formatDate(start)}</h5>
