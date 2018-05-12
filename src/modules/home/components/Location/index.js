@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 
+import GoogleMap from 'modules/home/components/GoogleMap'
 import PropTypes from 'prop-types'
 import Section from 'modules/home/components/Section'
 import TEDLogo from 'images/common/TEDWhiteLogo.png'
@@ -33,19 +34,6 @@ const DetailSection = styled(InfoSection)`
     @media (max-width: 991px) {
         text-align: center;
     }
-`
-
-const MapContainer = styled.div`
-    position: relative;
-    width: 100%;
-    padding-bottom: 75%;
-`
-
-const GoogleMapFrame = styled.iframe`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 0;
 `
 
 const RedText = styled.span`
@@ -90,9 +78,7 @@ const Location = props => {
       <div className='container'>
         <LocationContainer className='row'>
           <InfoSection className='col-12 col-lg-6'>
-            <MapContainer>
-              <GoogleMapFrame src={`https://www.google.com/maps/embed?pb=${googleMap}`} allowfullscreen />
-            </MapContainer>
+            <GoogleMap googleMapId={googleMap} />
           </InfoSection>
           <DetailSection className='col-12 col-lg-6'>
             <img src={TEDLogo} height='40' alt='' />
