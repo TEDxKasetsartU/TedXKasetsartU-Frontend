@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 const RedText = styled.span`
     color: ${colors.red};
+    font-size: 35px;
 `
 
 const CountDownText = props => {
