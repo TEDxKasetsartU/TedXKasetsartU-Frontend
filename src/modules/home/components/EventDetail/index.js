@@ -26,12 +26,14 @@ const BookButton = styled.a`
     font-weight: bold;
 `
 
+const TZ = 'Asia/Bangkok'
+
 const EventDetail = props => {
   const { location, start, end, endTicket, year, concept } = props
-  const startDate = moment.tz(start, 'Asia/Bangkok')
-  const endDate = moment.tz(end, 'Asia/Bangkok')
-  const endTicketDate = moment.tz(endTicket, 'Asia/Bangkok')
-  const now = moment().tz('Asia/Bangkok')
+  const startDate = moment.tz(start, TZ)
+  const endDate = moment.tz(end, TZ)
+  const endTicketDate = moment.tz(endTicket, TZ)
+  const now = moment().tz(TZ)
   const leftTicketDay = endTicketDate.diff(now, 'days')
   const leftTicketHours = endTicketDate.diff(now, 'hours')
   const leftDay = endDate.diff(now, 'days')
