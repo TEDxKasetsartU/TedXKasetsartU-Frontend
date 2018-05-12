@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
+import { formatDate, formatTime, isBefore, isBetween } from 'common/utils/dateUtils'
 
 import BookButton from 'modules/home/components/BookButton'
 import CountDownText from 'modules/home/components/CountDownText'
 import PropTypes from 'prop-types'
 import TEDLogo from 'images/common/TEDWhiteLogo.png'
 import loadImage from 'common/utils/loadImage'
-import moment from 'moment-timezone'
 import styled from 'styled-components'
 
 const ConceptImage = styled.img`
@@ -14,26 +14,6 @@ const ConceptImage = styled.img`
         margin: 16px;
     }
 `
-
-const TZ = 'Asia/Bangkok'
-
-function formatDate (date) {
-  return moment.tz(date, TZ).format('DD MMM YYYY')
-}
-
-function formatTime (date) {
-  return moment.tz(date, TZ).format('HH:mm')
-}
-
-function isBefore (date) {
-  const now = moment().tz(TZ)
-  const momentDate = moment.tz(date, TZ)
-  return now.isBefore(momentDate)
-}
-
-function isBetween (start, end) {
-  return !isBefore(start) && isBefore(end)
-}
 
 const EventDetail = props => {
   const { location, start, end, endTicket, year, concept, bookUrl } = props
