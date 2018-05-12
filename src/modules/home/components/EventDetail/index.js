@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 
+import BookButton from 'modules/home/components/BookButton'
 import PropTypes from 'prop-types'
 import TEDLogo from 'images/common/TEDWhiteLogo.png'
 import colors from 'common/mixins/colors'
@@ -16,14 +17,6 @@ const ConceptImage = styled.img`
 
 const RedText = styled.span`
     color: ${colors.red};
-`
-
-const BookButton = styled.a`
-    border-radius: 0rem;
-    border-width: 1px;
-    font-size: 1.25rem;
-    margin: 5px 0;
-    font-weight: bold;
 `
 
 const TZ = 'Asia/Bangkok'
@@ -51,7 +44,7 @@ const EventDetail = props => {
             ? (<h5><RedText>{leftTicketDay}</RedText> Days Left to Get Ticket !</h5>)
             : (<h5><RedText>{leftTicketHours}</RedText> Hours Left to Get Ticket !</h5>)
           }
-          <BookButton className='btn btn-outline-danger' href={bookUrl} >Book Now</BookButton>
+          <BookButton bookUrl={bookUrl} />
         </Fragment>
       )
       }
