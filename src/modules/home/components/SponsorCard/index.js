@@ -15,14 +15,18 @@ const SponsorLogo = styled.img`
   }
 `
 
+const CardContainer = styled.div`
+  margin: auto;
+`
+
 const SponsorCard = props => {
   const { year, imageSrc, name, url } = props
   return (
-    <div className='col-6 col-sm-4 col-lg-3'>
+    <CardContainer className='col-6 col-sm-4 col-lg-3'>
       <a href={url}>
         <SponsorLogo className='img-fluid' src={loadImage('sponsors', year, imageSrc)} alt={name} />
       </a>
-    </div>
+    </CardContainer>
   )
 }
 

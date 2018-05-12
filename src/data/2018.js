@@ -115,12 +115,12 @@ export default {
     platinum: [
       {
         imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
+        url: 'https://eng.ku.ac.th/',
         name: 'Engineer KU'
       },
       {
-        imageSrc: 'AIS.png',
-        url: 'http://eng.ku.ac.th/',
+        imageSrc: 'ais.png',
+        url: 'http://www.ais.co.th/',
         name: 'Engineer KU'
       },
       {
