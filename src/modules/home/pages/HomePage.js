@@ -1,6 +1,6 @@
 import Cover from 'modules/home/components/Cover'
+import Event from 'modules/home/components/Event'
 import Live from 'modules/home/components/Live'
-import Location from 'modules/home/components/Location'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Speakers from 'modules/home/components/Speakers'
@@ -12,7 +12,7 @@ const HomePage = props => {
   return (
     <div>
       <Cover year={year} />
-      <Location location={location} year={year} concept={concept} bookUrl={book} />
+      <Event location={location} year={year} concept={concept} bookUrl={book} />
       { isLive && <Live channel={channel} /> }
       <Speakers speakers={speakers} year={year} />
       <Sponsors sponsors={partners} year={year} />
