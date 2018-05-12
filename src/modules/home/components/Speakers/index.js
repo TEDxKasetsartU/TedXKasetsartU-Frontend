@@ -19,8 +19,19 @@ const SpeakerDetail = styled.div`
 `
 
 const SpeakerPicture = styled.img`
-  margin: 5% 0;
-  width: 100%;
+  max-width: 100%;
+  @media screen and (min-width: 769px){
+    max-width: 75%;
+  }
+  @media screen and (min-width: 992px){
+    max-width: 35%;
+  }
+  align-self: center;
+`
+
+const PictureContainer = styled.div`
+  justify-content: center;
+  display: flex;
 `
 
 class Speakers extends React.PureComponent {
@@ -54,7 +65,11 @@ class Speakers extends React.PureComponent {
             <SpeakerHeadline title={topic} author={name} description={description} />
             { youtubeId
               ? <YoutubePlayer id={youtubeId} title={title} />
-              : <SpeakerPicture src={loadImage('speakers', year, imageSrc)} />
+              : (
+                <PictureContainer>
+                  <SpeakerPicture src={loadImage('speakers', year, imageSrc)} />
+                </PictureContainer>
+              )
             }
           </SpeakerDetail>)
         }
