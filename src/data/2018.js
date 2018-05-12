@@ -1,6 +1,7 @@
 
 export default {
   year: 2018,
+  booking: 'https://line.me/R/ti/p/%40tedxkasetsartu',
   live: {
     channel: 'UCq_IqBLBT2IQm-GjWIfAerQ',
     isLive: false

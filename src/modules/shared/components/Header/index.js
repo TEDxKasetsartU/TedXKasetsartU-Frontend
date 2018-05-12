@@ -13,7 +13,7 @@ const Header = props => {
   const thumbnail = `${URL}${loadImage('cover', year, 'thumbnail.png').slice(1)}`
   return (
     <Helmet>
-      <title>${title}</title>
+      <title>{title}</title>
       <meta name='description' content={description} />
       <meta name='keywords' content='TEDxKasetsartU,ted,tedx,kasetsart,kaset,TEDx,KU,ku,tedxkaset,tedxkasetu,detxkaset,tedxku,tad,tadxkaset,tadxku' />
       <meta name='author' content='TEDxKasetsartU' />
