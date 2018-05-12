@@ -19,8 +19,19 @@ const SpeakerDetail = styled.div`
 `
 
 const SpeakerPicture = styled.img`
-  margin: 5% 0;
-  width: 100%;
+  max-width: 100%;
+  @media screen and (min-width: 769px){
+    max-width: 75%;
+  }
+  @media screen and (min-width: 992px){
+    max-width: 35%;
+  }
+  align-self: center;
+`
+
+const PictureContainer = styled.div`
+  justify-content: center;
+  display: flex;
 `
 
 class Speakers extends React.PureComponent {
@@ -39,6 +50,7 @@ class Speakers extends React.PureComponent {
   render () {
     const { speakers, year } = this.props
     const { selectedSpeaker } = this.state
+    const { topic, name, description, youtubeId, imageSrc, title } = selectedSpeaker
     return (
       <Section
         backgroundColor={colors.red}
@@ -50,10 +62,14 @@ class Speakers extends React.PureComponent {
         <SpeakerSelector speakers={speakers} year={year} selectSpeaker={this.selectSpeaker} activeSpeaker={selectedSpeaker.name} />
         { selectedSpeaker &&
           (<SpeakerDetail>
-            <SpeakerHeadline title={selectedSpeaker.topic} author={selectedSpeaker.name} />
-            { selectedSpeaker.youtubeId
-              ? <YoutubePlayer id={selectedSpeaker.youtubeId} title={selectedSpeaker.title} />
-              : <SpeakerPicture src={loadImage('speakers', year, selectedSpeaker.imageSrc)} />
+            <SpeakerHeadline title={topic} author={name} description={description} />
+            { youtubeId
+              ? <YoutubePlayer id={youtubeId} title={title} />
+              : (
+                <PictureContainer>
+                  <SpeakerPicture src={loadImage('speakers', year, imageSrc)} />
+                </PictureContainer>
+              )
             }
           </SpeakerDetail>)
         }

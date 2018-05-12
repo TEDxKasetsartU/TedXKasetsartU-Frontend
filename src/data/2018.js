@@ -19,291 +19,74 @@ export default {
   },
   speakers: [
     {
-      imageSrc: '1.jpg',
-      name: 'อ.ดร. กาญจนพันธุ์ สุขวิชชัย',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014'
+      imageSrc: 'aj manow-02-01.jpg',
+      name: 'ผศ.ดร.จิตร์ทัศน์ ฝักเจริญผล',
+      description: 'อาจารย์ภาควิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเกษตรศาสตร์ และ หนึ่งในเด็กไทยรุ่นแรกที่สามารถคว้าเหรียญทองในการแข่งขันโอลิมปิกวิชาการคอมพิวเตอร์ เมื่อปี พ.ศ. 2535 ที่ประเทศเยอรมนี'
     },
     {
-      imageSrc: '1.jpg',
-      name: 'รวิศ หาญอุตสาหะ',
-      description: 'กรรมการผู้จัดการบริษัท ศรีจันทร์สหโอสถ จำกัด',
-      topic: 'เกลียดวันจันทร์?',
-      youtubeId: '23BA9X6Pphk'
+      imageSrc: 'christy-01.jpg',
+      name: 'คริสตี้หลุยส์ นามวงศ์',
+      description: 'นักดริฟท์รถหญิงสังกัดทีม  Singha Drift Team Thailand นอกจากนี้ยังเป็นนางแบบ และเปิดสถาบันสอนเปียโนเป็นของตัวเอง'
     },
     {
-      imageSrc: '1.jpg',
-      name: 'อ.ดร. กาญจนพัน',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
+      imageSrc: 'k หมู2-01.jpg',
+      name: 'ณัฐวุฒิ พึงเจริญพงศ์',
+      description: 'ผู้ก่อตั้งและซีอีโอ บริษัท อุ๊คบี (Ookbee) แอพร้านหนังสือในรูปแบบดิจิทัล ที่ใหญ่ที่สุดใน Southeast Asia, Venture Partner ของ 500 Startups และเป็นผู้บุกเบิกวงการ Startup ของไทย เริ่มตั้งแต่การทําบริษัท ซอฟท์แวร์เล็กๆ ตอนเรียนจบใหม่ๆ จนกระทั่งเห็นโอกาสทางเทคโนโลยี และก่อตั้งบริษัท Tech Startup ที่มีพนักงานกว่า 400 คนทั่ว South East Asia'
     },
     {
-      imageSrc: '1.jpg',
-      name: 'อ.. กาญจนพันธุ์ สุขวิชชัย',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
+      imageSrc: 'p nan-01.jpg',
+      name: 'อริสรา ธนาปกิจ (ครูพี่แนน Enconcept)',
+      description: 'เจ้าของโรงเรียนกวดวิชา Enconcept ที่ต่อสู้พลิกโรงเรียนที่ตอนแรกมีเด็กมาเรียนอยู่ 7 คนจนปัจจุบันมีสาขามากถึง 38 สาขาทั่วประเทศไทย'
     },
     {
-      imageSrc: '1.jpg',
-      name: 'อ.ดร. กาญจนพันธ สุขวิชชัย',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
+      imageSrc: 'Pam-01.jpg',
+      name: 'ปรารี กิตติดำเกิง',
+      description: 'นักออกแบบและศิลปินไทยที่ผลงานของเธอได้รับรางวัลมากมาย เช่น STA100, B.A.D. Awards (Bangkok Art Director’s Association) ผลงานของเธอจัดแสดงมาแล้วทั้งในกรุงเทพฯ, โตเกียว, ซานฟรานซิสโก, นิวยอร์ก ฯลฯ'
     },
     {
-      imageSrc: '1.jpg',
-      name: 'อ.ดร. ญจนพันธุ์ สุขวิชชัย',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
+      imageSrc: 'Pat-01.jpg',
+      name: 'รัณนภันต์ ยั่งยืนพูนชัย (แพท Klear)',
+      description: 'Frontman วง Klear วงร็อคหญิงวงสุดท้ายของวงการเพลงไทย'
     },
     {
-      imageSrc: '1.jpg',
-      name: 'อ.ดร. กาญจนพัน สุขวิชชัย',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
+      imageSrc: 'peng-01.jpg',
+      name: 'ชานนท์ ยอดหงส์',
+      description: 'อดีต Art director ของค่ายเพลงร็อค(Genie Records)ที่ปัจจุบันผันตัวมาเป็น Freelance ด้วยแนวคิดที่ว่าการเป็น Freelance สร้างวินัยและนิสัยที่ดีให้กับตัวเองมากกว่าทำงานบริษัทกินเงินเดือน'
     },
     {
-      imageSrc: '1.jpg',
-      name: 'อ. กาญจนพันธุ์ ',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
+      imageSrc: 'poyd-01.jpg',
+      name: 'ตรีชฎา เพชรรัตน์',
+      description: 'ชนะเลิศมิสทิฟฟานียูนิเวิร์สประจำปี 2547 และ ตัวแทนตัวแทนเข้าประกวดมิสอินเตอร์เนชั่นแนลควีนในโรงละครทิฟฟานีพัทยา จนได้รับตำแหน่งชนะเลิศ ปัจจุบันมีผลงานในวงการบันเทิงทั้งไทยและเทศ'
     },
     {
-      imageSrc: '1.jpg',
-      name: 'อ.ดร. กาญจนพันธุ์ ',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
-    },
-    {
-      imageSrc: '1.jpg',
-      name: 'อ.ดร. กาญพันธุ์ สุขวิชชัย',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
-    },
-    {
-      imageSrc: '1.jpg',
-      name: 'อ.ดร. กาญจนพันธุ์ สุขชชัย',
-      description: 'อาจารย์ประจำภาควิชาวิศวกรรมไฟฟ้า คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ และ ผู้ก่อตั้งชมรมScuba แชมป์การแข่งขันรายการ World RoboCup Organization (Small Size Robot Soccer League) ปี 2009 – 2014',
-      topic: 'สมองกลสอนคน',
-      youtubeId: 'J66ua-ELj8I'
+      imageSrc: 'toey-01.jpg',
+      name: 'ภาณุมาศ ทองธนากุล',
+      description: 'ผู้เขียนหนังสือ Best seller การลาออกครั้งสุดท้าย ปี 2553: พิมพ์ทั้งหมด 45 ครั้ง ความสำเร็จครั้งนั้นนำพาเขาไปพบสิ่งสำคัญในชีวิต'
     }
   ],
   partners: {
     patron: [
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      },
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      },
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      }
+
     ],
     platinum: [
       {
-        imageSrc: 'eng-ku.png',
-        url: 'https://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      },
-      {
-        imageSrc: 'ais.png',
+        imageSrc: 'AIS.png',
         url: 'http://www.ais.co.th/',
-        name: 'Engineer KU'
-      },
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
+        name: 'AIS'
       }
     ],
     gold: [
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      },
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      },
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      }
+
     ],
     friends: [
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      },
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      },
-      {
-        imageSrc: 'eng-ku.png',
-        url: 'http://eng.ku.ac.th/',
-        name: 'Engineer KU'
-      }
+
     ]
   },
   volunteers: [
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'Voraton Lertrattnapaisal',
-      position: 'Developer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    },
-    {
-      imageSrc: 'jirayut.jpg',
-      name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-      position: 'Graphic Designer'
-    }
+    // {
+    //   imageSrc: 'jirayut.jpg',
+    //   name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
+    //   position: 'Graphic Designer'
+    // }
   ]
 }
