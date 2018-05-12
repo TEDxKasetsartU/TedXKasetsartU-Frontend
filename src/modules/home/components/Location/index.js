@@ -34,7 +34,7 @@ const DetailSection = styled(InfoSection)`
 `
 
 const Location = props => {
-  const { year, concept, location } = props
+  const { year, concept, location, bookUrl } = props
   const { text } = concept
   const { googleMap, start, end, ticketEnd, name } = location
   return (
@@ -51,7 +51,7 @@ const Location = props => {
             <GoogleMap googleMapId={googleMap} />
           </InfoSection>
           <DetailSection className='col-12 col-lg-6'>
-            <EventDetail location={name} start={start} end={end} endTicket={ticketEnd} concept={text} year={year} />
+            <EventDetail location={name} start={start} end={end} endTicket={ticketEnd} concept={text} year={year} bookUrl={bookUrl} />
           </DetailSection>
         </LocationContainer>
       </div>
@@ -62,7 +62,8 @@ const Location = props => {
 Location.propTypes = {
   location: PropTypes.object,
   year: PropTypes.number,
-  concept: PropTypes.object
+  concept: PropTypes.object,
+  bookUrl: PropTypes.string
 }
 
 export default Location

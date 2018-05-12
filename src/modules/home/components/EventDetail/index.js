@@ -29,7 +29,7 @@ const BookButton = styled.a`
 const TZ = 'Asia/Bangkok'
 
 const EventDetail = props => {
-  const { location, start, end, endTicket, year, concept } = props
+  const { location, start, end, endTicket, year, concept, bookUrl } = props
   const startDate = moment.tz(start, TZ)
   const endDate = moment.tz(end, TZ)
   const endTicketDate = moment.tz(endTicket, TZ)
@@ -51,7 +51,7 @@ const EventDetail = props => {
             ? (<h5><RedText>{leftTicketDay}</RedText> Days Left to Get Ticket !</h5>)
             : (<h5><RedText>{leftTicketHours}</RedText> Hours Left to Get Ticket !</h5>)
           }
-          <BookButton className='btn btn-outline-danger' href='https://line.me/R/ti/p/%40tedxkasetsartu' >Book Now</BookButton>
+          <BookButton className='btn btn-outline-danger' href={bookUrl} >Book Now</BookButton>
         </Fragment>
       )
       }
@@ -73,7 +73,8 @@ EventDetail.propTypes = {
   end: PropTypes.instanceOf(Date),
   endTicket: PropTypes.instanceOf(Date),
   year: PropTypes.number,
-  concept: PropTypes.string
+  concept: PropTypes.string,
+  bookUrl: PropTypes.string
 }
 
 export default EventDetail
