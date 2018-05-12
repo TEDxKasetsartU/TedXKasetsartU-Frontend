@@ -21,9 +21,26 @@ const RedText = styled.span`
 
 const TZ = 'Asia/Bangkok'
 
+function formatDate (date) {
+  return moment.tz(date, TZ).format('DD MMM YYYY')
+}
+
+function formatTime (date) {
+  return moment.tz(date, TZ).format('HH:mm')
+}
+
+function isBefore (date) {
+  const now = moment().tz(TZ)
+  const momentDate = moment.tz(date, TZ)
+  return now.isBefore(momentDate)
+}
+
+function isBetween (start, end) {
+  return !isBefore(start) && isBefore(end)
+}
+
 const EventDetail = props => {
   const { location, start, end, endTicket, year, concept, bookUrl } = props
-  const startDate = moment.tz(start, TZ)
   const endDate = moment.tz(end, TZ)
   const endTicketDate = moment.tz(endTicket, TZ)
   const now = moment().tz(TZ)
@@ -36,9 +53,9 @@ const EventDetail = props => {
       <img src={TEDLogo} height='40' alt='' />
       <ConceptImage src={loadImage('cover', year, 'concept.png')} alt={concept} height='25' />
       <h5>{`@${location}`}</h5>
-      <h5>{startDate.format('DD MMM YYYY')}</h5>
-      <h5>{`${startDate.format('HH:mm')} - ${endDate.format('HH:mm')}`}</h5>
-      { now.isBefore(endTicketDate) && (
+      <h5>{formatDate(start)}</h5>
+      <h5>{`${formatTime(start)} - ${formatTime(end)}`}</h5>
+      { isBefore(endTicket) && (
         <Fragment>
           { leftTicketDay > 0
             ? (<h5><RedText>{leftTicketDay}</RedText> Days Left to Get Ticket !</h5>)
@@ -48,7 +65,7 @@ const EventDetail = props => {
         </Fragment>
       )
       }
-      { !now.isBefore(endTicketDate) && now.isBefore(endDate) && (
+      { isBetween(endTicket, end) && (
         <Fragment>
           { leftDay > 0
             ? (<h5><RedText>{leftDay}</RedText> Days Left to TEDxKasetsartU !</h5>)
