@@ -57,7 +57,7 @@ const ConceptImage = styled.img`
 
 const Location = props => {
   const { year, concept, location } = props
-  const { text, imgSrc } = concept
+  const { text } = concept
   const { googleMap, start, end, ticketEnd, name } = location
   const startDate = moment.tz(start, 'Asia/Bangkok')
   const endDate = moment.tz(end, 'Asia/Bangkok')
@@ -82,7 +82,7 @@ const Location = props => {
           </InfoSection>
           <DetailSection className='col-12 col-lg-6'>
             <img src={TEDLogo} height='40' alt='' />
-            <ConceptImage src={loadImage('cover', year, imgSrc)} alt={text} height='25' />
+            <ConceptImage src={loadImage('cover', year, 'concept.png')} alt={text} height='25' />
             <h5>{`@${name}`}</h5>
             <h5>{startDate.format('DD MMM YYYY')}</h5>
             <h5>{`${startDate.format('HH:mm')} - ${endDate.format('HH:mm')}`}</h5>
