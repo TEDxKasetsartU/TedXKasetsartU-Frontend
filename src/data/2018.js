@@ -70,7 +70,7 @@ export default {
     ],
     platinum: [
       {
-        imageSrc: 'ais.png',
+        imageSrc: 'AIS.png',
         url: 'http://www.ais.co.th/',
         name: 'AIS'
       }
