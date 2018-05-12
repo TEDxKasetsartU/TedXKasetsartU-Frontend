@@ -39,6 +39,7 @@ class Speakers extends React.PureComponent {
   render () {
     const { speakers, year } = this.props
     const { selectedSpeaker } = this.state
+    const { topic, name, description, youtubeId, imageSrc, title } = selectedSpeaker
     return (
       <Section
         backgroundColor={colors.red}
@@ -50,10 +51,10 @@ class Speakers extends React.PureComponent {
         <SpeakerSelector speakers={speakers} year={year} selectSpeaker={this.selectSpeaker} activeSpeaker={selectedSpeaker.name} />
         { selectedSpeaker &&
           (<SpeakerDetail>
-            <SpeakerHeadline title={selectedSpeaker.topic} author={selectedSpeaker.name} />
-            { selectedSpeaker.youtubeId
-              ? <YoutubePlayer id={selectedSpeaker.youtubeId} title={selectedSpeaker.title} />
-              : <SpeakerPicture src={loadImage('speakers', year, selectedSpeaker.imageSrc)} />
+            <SpeakerHeadline title={topic} author={name} description={description} />
+            { youtubeId
+              ? <YoutubePlayer id={youtubeId} title={title} />
+              : <SpeakerPicture src={loadImage('speakers', year, imageSrc)} />
             }
           </SpeakerDetail>)
         }

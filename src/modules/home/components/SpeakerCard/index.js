@@ -4,8 +4,7 @@ import loadImage from 'common/utils/loadImage'
 import styled from 'styled-components'
 
 const ImageContainer = styled.div`
-  height: 200px;
-  width: 150px;
+  height: 300px;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -15,7 +14,6 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   max-height: 100%;
   filter: ${props => props.isSelected ? 'none' : 'grayscale(100%)'};
-  transform: translateX(-15%);
   &:hover {
     filter: none;
     transition: all 300ms;

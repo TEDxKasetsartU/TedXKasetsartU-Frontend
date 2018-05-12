@@ -16,7 +16,7 @@ const HomePage = props => {
       { isLive && <Live channel={channel} /> }
       <Speakers speakers={speakers} year={year} />
       <Sponsors sponsors={partners} year={year} />
-      <Volunteers volunteers={volunteers} year={year} />
+      { volunteers.length > 0 && <Volunteers volunteers={volunteers} year={year} /> }
     </div>
   )
 }

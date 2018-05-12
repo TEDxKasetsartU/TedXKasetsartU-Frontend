@@ -33,14 +33,24 @@ const SpeakerHeadline = props => (
             <Author>{props.author}</Author>
           </div>
         </Fragment>
-      ) : <div><Title>{props.author}</Title></div>
+      ) : (
+        <Fragment>
+          <div>
+            <Title>{props.author}</Title>
+          </div>
+          <div>
+            <Author>{props.description}</Author>
+          </div>
+        </Fragment>
+      )
     }
   </SpeakerHeadlineContainer>
 )
 
 SpeakerHeadline.propTypes = {
   title: PropTypes.string,
-  author: PropTypes.string
+  author: PropTypes.string,
+  description: PropTypes.string
 }
 
 export default SpeakerHeadline
