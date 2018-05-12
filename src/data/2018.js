@@ -121,7 +121,7 @@ export default {
       {
         imageSrc: 'ais.png',
         url: 'http://www.ais.co.th/',
-        name: 'Engineer KU'
+        name: 'AIS'
       },
       {
         imageSrc: 'eng-ku.png',
