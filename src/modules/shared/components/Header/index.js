@@ -5,6 +5,7 @@ import loadImage from 'common/utils/loadImage'
 
 const URL = process.env.REACT_APP_HOST
 const APP_ID = process.env.REACT_APP_FACEBOOK_APP_ID
+const BING_VALID = process.env.REACT_APP_BING_VALIDATE
 
 const Header = props => {
   const { year, concept, location } = props
@@ -17,6 +18,7 @@ const Header = props => {
       <meta name='description' content={description} />
       <meta name='keywords' content='TEDxKasetsartU,ted,tedx,kasetsart,kaset,TEDx,KU,ku,tedxkaset,tedxkasetu,detxkaset,tedxku,tad,tadxkaset,tadxku' />
       <meta name='author' content='TEDxKasetsartU' />
+      <meta name='msvalidate.01' content={BING_VALID} />
       <meta property='fb:app_id' content={APP_ID} />
       <meta property='og:title' content={title} />
       <meta property='og:description' content={description} />
