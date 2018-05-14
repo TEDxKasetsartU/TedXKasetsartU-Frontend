@@ -21,6 +21,12 @@ class PromoVideo extends React.PureComponent {
       this.setState({ isPause: !isPause })
     }
 
+    componentDidMount () {
+      const { onPromoFinish } = this.props
+      const video = document.getElementById('promo-vid')
+      video.onended = onPromoFinish
+    }
+
     render () {
       const { year, isLive } = this.props
       return (
@@ -31,7 +37,8 @@ class PromoVideo extends React.PureComponent {
 
 PromoVideo.propTypes = {
   year: PropTypes.number,
-  isLive: PropTypes.bool
+  isLive: PropTypes.bool,
+  onPromoFinish: PropTypes.func
 }
 
 export default PromoVideo
