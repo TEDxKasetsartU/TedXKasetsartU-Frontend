@@ -38,7 +38,7 @@ class Cover extends React.PureComponent {
                 <img src={loadImage('cover', year, 'mcover.png')} alt={alt} className='img-fluid' onClick={this.replay} />
               </CoverContainer>
             </Fragment>
-          ) : <PromoVideo year={year} isLive={isLive} onPromoFinish={this.onPromoFinish} />
+          ) : <PromoVideo year={year} onPromoFinish={this.onPromoFinish} />
         }
       </Fragment>
     )
@@ -46,8 +46,7 @@ class Cover extends React.PureComponent {
 }
 
 Cover.propTypes = {
-  year: PropTypes.number,
-  isLive: PropTypes.bool
+  year: PropTypes.number
 }
 
 export default Cover
