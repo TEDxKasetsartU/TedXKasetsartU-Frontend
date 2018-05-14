@@ -11,8 +11,8 @@ const HomePage = props => {
   const { year, location, concept, speakers, partners, volunteers, live: { isLive, channel }, booking } = props.data
   return (
     <div>
-      <Cover year={year} />
-      <Event location={location} year={year} concept={concept} bookUrl={booking} isLive={isLive} />
+      <Cover year={year} isLive={isLive} />
+      <Event location={location} year={year} concept={concept} bookUrl={booking} />
       { isLive && <Live channel={channel} /> }
       <Speakers speakers={speakers} year={year} />
       <Sponsors sponsors={partners} year={year} />
