@@ -40,12 +40,13 @@ const ImageCard = styled.img`
 `
 
 const VolunteerCard = props => {
-  const { name, imageSrc, year, position } = props
+  const { name, imageSrc, year, position, team } = props
   return (
     <CardContainer>
       <ImageCard src={loadImage('volunteers', year, imageSrc)} alt={name} />
       <InfoOverlay>
         <InfoContainer>
+          <p>#{team}</p>
           <p>{name}</p>
           <p>{position}</p>
         </InfoContainer>
@@ -58,7 +59,8 @@ VolunteerCard.propTypes = {
   name: PropTypes.string,
   year: PropTypes.number,
   position: PropTypes.string,
-  imageSrc: PropTypes.string
+  imageSrc: PropTypes.string,
+  team: PropTypes.string
 }
 
 export default VolunteerCard
