@@ -16,9 +16,12 @@ const InfoOverlay = styled.div`
     left: 0;
     right: 0;
     height: 100%;
-    opacity: ${props => props.isPause ? 0.75 : 0};
+    opacity: 0;
     transition: .5s ease;
     background-color: ${colors.red};
+    &: hover {
+      opacity: 0.7;
+    }
 `
 
 const InfoContainer = styled.div`
