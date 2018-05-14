@@ -83,10 +83,131 @@ export default {
     ]
   },
   volunteers: [
-    // {
-    //   imageSrc: 'jirayut.jpg',
-    //   name: 'จิรายุทธ ลีอุปถัมภ์วงศ์',
-    //   position: 'Graphic Designer'
-    // }
+    {
+      'imageSrc': 'S15-01.jpg',
+      'name': 'มนัสนันท์ วัฒนสกลพันธุ์',
+      'team': 'Marketing',
+      'position': 'Marketing Executive'
+    },
+    {
+      'imageSrc': 'S10-01.jpg',
+      'name': 'วรธน เลิศรัตนไพศาล',
+      'team': 'Marketing',
+      'position': 'Developer'
+    },
+    {
+      'imageSrc': 'S20-01.jpg',
+      'name': 'นวชล จันทร์จิเรศรัศมี',
+      'team': 'Marketing',
+      'position': 'Content editor'
+    },
+    {
+      'imageSrc': 'S21-01.jpg',
+      'name': 'พรพรรณ ออตัญติกุล',
+      'team': 'Marketing',
+      'position': 'Web Specialista & IT'
+    },
+    {
+      'imageSrc': 'S26-01.jpg',
+      'name': 'กิตติพร โชติกเวสสะกุล',
+      'team': 'Marketing',
+      'position': 'Content editor'
+    },
+    {
+      'imageSrc': 'S23-01.jpg',
+      'name': 'กมนทัต จันทราจีระธำรงค์',
+      'team': 'Marketing',
+      'position': 'Developer'
+    },
+    {
+      'imageSrc': 'S17-01.jpg',
+      'name': 'ณัฏฐาทิพย์ เจริญศิริพรกุล',
+      'team': 'Staff',
+      'position': 'Staff'
+    },
+    {
+      'imageSrc': 'S09-01.jpg',
+      'name': 'ศุภนุช โกฏิมนัสวนิชย์',
+      'team': 'Finance',
+      'position': 'AE'
+    },
+    {
+      'imageSrc': 'S08-01.jpg',
+      'name': 'ศุภิสรา  เลิศธนู',
+      'team': 'Production',
+      'position': 'Co-Producer'
+    },
+    {
+      'imageSrc': 'S03-01.jpg',
+      'name': 'ณัฐพล ทองโอภาส',
+      'team': 'Finance',
+      'position': 'AE'
+    },
+    {
+      'imageSrc': 'S13-01.jpg',
+      'name': 'กวิน อุทยานะกะ',
+      'team': 'Event',
+      'position': 'Executive event'
+    },
+    {
+      'imageSrc': 'S24-01.jpg',
+      'name': 'ณัฐชา ปทิตตาบุตร',
+      'team': 'Event',
+      'position': 'Coproject manager'
+    },
+    {
+      'imageSrc': 'S25-01.jpg',
+      'name': 'ธนาพร ตระกูลดิษฐ์',
+      'team': 'curator',
+      'position': 'Curator'
+    },
+    {
+      'imageSrc': 'S29-01.jpg',
+      'name': 'วรัตม์ ล้ำเลิศพงศ์พนา',
+      'team': 'Event',
+      'position': 'Project Manager'
+    },
+    {
+      'imageSrc': 'j.jpg',
+      'name': 'ตุลารัตน์ รวยทรัพย์',
+      'team': 'Staff',
+      'position': 'Staff'
+    },
+    {
+      'imageSrc': 'S16-01.jpg',
+      'name': 'สิรวิชญ์ พันธ์อุดม',
+      'team': 'Staff',
+      'position': 'Staff'
+    },
+    {
+      'imageSrc': 'S02-01.jpg',
+      'name': 'รวิกานต์ จิตจักร',
+      'team': 'Finance',
+      'position': 'AE'
+    },
+    {
+      'imageSrc': 'S19-01.jpg',
+      'name': 'ฐานิดา หวังสร้างบุญ',
+      'team': 'Event',
+      'position': 'Event'
+    },
+    {
+      'imageSrc': 'S07-01.jpg',
+      'name': 'วิทูร พัฒน์ทอง',
+      'team': 'Production',
+      'position': 'Producer'
+    },
+    {
+      'imageSrc': 'h.jpg',
+      'name': 'ปภัสรา  สุนทรเจริญนนท์',
+      'team': 'Staff',
+      'position': 'Staff'
+    },
+    {
+      'imageSrc': 'S27-01.jpg',
+      'name': 'สิริกาญจน์ เมธีธิติพงศ์',
+      'team': 'Staff',
+      'position': 'Staff'
+    }
   ]
 }

@@ -27,7 +27,7 @@ const Volunteers = props => {
     >
       <ScrollContainer color='white'>
         <GridVolunteers>
-          { props.volunteers.map(({ imageSrc, name, position }) => <VolunteerCard key={name} imageSrc={imageSrc} name={name} position={position} year={year} />)}
+          { props.volunteers.map(({ imageSrc, name, position, team }) => <VolunteerCard key={name} imageSrc={imageSrc} name={name} position={position} year={year} team={team} />)}
         </GridVolunteers>
       </ScrollContainer>
     </Section>
