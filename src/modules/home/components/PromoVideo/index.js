@@ -1,7 +1,33 @@
+import Icon from 'react-fontawesome'
 import PropTypes from 'prop-types'
 import React from 'react'
 import loadImage from 'common/utils/loadImage'
 import styled from 'styled-components'
+
+const Container = styled.div`
+    position: relative;
+    width: 100%;
+`
+
+const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: ${props => props.isPause ? 0.5 : 0};
+    transition: .5s ease;
+    background-color: black;
+`
+
+const PlayContainer = styled.div`
+  height: 100%;  
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 const Video = styled.video`
     width: 100%;
@@ -10,7 +36,7 @@ const Video = styled.video`
 
 class PromoVideo extends React.PureComponent {
     state = {
-      isPause: this.props.isLive
+      isPause: true
     }
 
     changeVideoState = () => {
@@ -28,16 +54,23 @@ class PromoVideo extends React.PureComponent {
     }
 
     render () {
-      const { year, isLive } = this.props
+      const { year } = this.props
+      const { isPause } = this.state
       return (
-        <Video id='promo-vid' src={loadImage('promo', year, 'promo.mp4')} type='video/wmv' autoPlay={!isLive} onClick={this.changeVideoState} />
+        <Container onClick={this.changeVideoState} >
+          <Video id='promo-vid' src={loadImage('promo', year, 'promo.mp4')} type='video/wmv' />
+          <Overlay isPause={isPause}>
+            <PlayContainer>
+              <Icon name='play' size='5x' />
+            </PlayContainer>
+          </Overlay>
+        </Container>
       )
     }
 }
 
 PromoVideo.propTypes = {
   year: PropTypes.number,
-  isLive: PropTypes.bool,
   onPromoFinish: PropTypes.func
 }
 
