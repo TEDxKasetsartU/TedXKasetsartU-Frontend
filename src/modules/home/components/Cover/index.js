@@ -23,7 +23,7 @@ class Cover extends React.PureComponent {
   }
 
   render () {
-    const { year, isLive } = this.props
+    const { year } = this.props
     const { promoFinish } = this.state
     const alt = 'TEDxKasetsartU Cover'
     return (
