@@ -12,7 +12,7 @@ const HomePage = props => {
   return (
     <div>
       <Cover year={year} />
-      <Event location={location} year={year} concept={concept} bookUrl={booking} />
+      <Event location={location} year={year} concept={concept} bookUrl={booking} isLive={isLive} />
       { isLive && <Live channel={channel} /> }
       <Speakers speakers={speakers} year={year} />
       <Sponsors sponsors={partners} year={year} />

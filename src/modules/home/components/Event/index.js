@@ -1,5 +1,6 @@
 import EventDetail from 'modules/home/components/EventDetail'
 import GoogleMap from 'modules/home/components/GoogleMap'
+import PromoVideo from 'modules/home/components/PromoVideo'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Section from 'modules/home/components/Section'
@@ -34,7 +35,7 @@ const DetailSection = styled(InfoSection)`
 `
 
 const Location = props => {
-  const { year, concept, location, bookUrl } = props
+  const { year, concept, location, bookUrl, isLive } = props
   const { text } = concept
   const { googleMap, start, end, ticketEnd, name } = location
   return (
@@ -55,6 +56,7 @@ const Location = props => {
           </DetailSection>
         </LocationContainer>
       </div>
+      <PromoVideo year={year} isLive={isLive} />
     </Section>
   )
 }
@@ -63,7 +65,8 @@ Location.propTypes = {
   location: PropTypes.object,
   year: PropTypes.number,
   concept: PropTypes.object,
-  bookUrl: PropTypes.string
+  bookUrl: PropTypes.string,
+  isLive: PropTypes.bool
 }
 
 export default Location
