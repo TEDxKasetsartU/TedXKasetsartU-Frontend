@@ -65,9 +65,6 @@ export default {
     }
   ],
   partners: {
-    patron: [
-
-    ],
     platinum: [
       {
         imageSrc: 'AIS.png',
@@ -76,10 +73,23 @@ export default {
       }
     ],
     gold: [
-
+      {
+        imageSrc: 'elec.png',
+        url: 'https://www.pea.co.th/',
+        name: 'การไฟฟ้าส่วนภูมิภาค'
+      }
     ],
-    friends: [
-
+    silver: [
+      {
+        imageSrc: 'old-eng.png',
+        url: 'http://dongtanengineer.com/',
+        name: 'สมาคมศิษย์เก่าคณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์'
+      },
+      {
+        imageSrc: 'osot.png',
+        url: 'http://www.osotspa.com/',
+        name: 'OSOTSPA'
+      }
     ]
   },
   volunteers: [
