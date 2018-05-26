@@ -10,7 +10,7 @@ const SponsorsContainer = styled.div`
 `
 
 const Sponsors = props => {
-  const { year, sponsors: { patron, platinum, gold, friends } } = props
+  const { year, sponsors: { platinum, gold, silver } } = props
   return (
     <Section
       backgroundColor={colors.black}
@@ -20,16 +20,13 @@ const Sponsors = props => {
       id='partners'
     >
       <SponsorsContainer className='row'>
-        { patron.map(({ url, imageSrc, name }) => <SponsorCard key={url} year={year} url={url} name={name} imageSrc={imageSrc} />)}
+        { platinum.map(({ url, imageSrc, name }) => <SponsorCard key={url} year={year} url={url} name={name} imageSrc={imageSrc} size='col-6 col-sm-6 col-lg-4' />)}
       </SponsorsContainer>
       <SponsorsContainer className='row'>
-        { platinum.map(({ url, imageSrc, name }) => <SponsorCard key={url} year={year} url={url} name={name} imageSrc={imageSrc} />)}
+        { gold.map(({ url, imageSrc, name }) => <SponsorCard key={url} year={year} url={url} name={name} imageSrc={imageSrc} size='col-6 col-sm-6 col-lg-4' />)}
       </SponsorsContainer>
       <SponsorsContainer className='row'>
-        { gold.map(({ url, imageSrc, name }) => <SponsorCard key={url} year={year} url={url} name={name} imageSrc={imageSrc} />)}
-      </SponsorsContainer>
-      <SponsorsContainer className='row'>
-        { friends.map(({ url, imageSrc, name }) => <SponsorCard key={url} year={year} url={url} name={name} imageSrc={imageSrc} />)}
+        { silver.map(({ url, imageSrc, name }) => <SponsorCard key={url} year={year} url={url} name={name} imageSrc={imageSrc} size='col-4 col-sm-4 col-lg-3' />)}
       </SponsorsContainer>
     </Section>
   )
