@@ -10,7 +10,7 @@
     "express": "^4.16.3",
     "font-awesome": "^4.7.0",
     "mobx": "^4.0.0",
-    "mobx-react": "^5.0.0",
+    "mobx-react": "^6.1.7",
     "moment": "^2.22.1",
     "moment-timezone": "^0.5.16",
     "morgan": "^1.9.0",
