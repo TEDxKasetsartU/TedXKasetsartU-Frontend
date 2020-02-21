@@ -12,7 +12,7 @@
     "mobx": "^4.0.0",
     "mobx-react": "^5.0.0",
     "moment": "^2.22.1",
-    "moment-timezone": "^0.5.16",
+    "moment-timezone": "^0.5.28",
     "morgan": "^1.9.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
